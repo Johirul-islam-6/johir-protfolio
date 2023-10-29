@@ -35,12 +35,12 @@ const singelProject = () => {
         setProduct(data[0]);
         setLoading(false);
       });
-  }, []);
+  }, [id]);
 
    if (loading) {
     return (
       <>
-        <div class="center h-[90vh]">
+        <div className="center h-[90vh]">
           loading
         </div>
       </>

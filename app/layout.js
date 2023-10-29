@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { Navbar } from '@/Components/Navbar/Navbar';
 import { Footer } from '@/Components/Footer/Footer';
 
+// error6
 
 const inter = Inter({ subsets: ['latin'] })
 
