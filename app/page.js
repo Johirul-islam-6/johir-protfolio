@@ -1,6 +1,5 @@
 
 import { Banner } from '@/Components/Home/Banner/Banner'
-import './globals.css'
 import { Count } from '@/Components/Home/TotalCount/Count'
 import SkillsCard from '@/Components/Home/SkillsCard/SkillsCard'
 import Testimoniya from '@/Components/Testimonia/Testimoniya'
