@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* ---- */
+
 html body {
   background: linear-gradient(90deg, #07091a, #010101) !important;
   width: 100%;
