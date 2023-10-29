@@ -1,10 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "swiper/css/effect-coverflow";
-@import "swiper/css/pagination";
-
+/* ---- */
 html body {
   background: linear-gradient(90deg, #07091a, #010101) !important;
   width: 100%;
