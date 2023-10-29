@@ -3,8 +3,8 @@
 import "./SlideImage.css";
 import Image from "next/image";
 import { useState } from "react";
-import mocdt_workflow from "../../app/Assets/about/mocdt_work.jpg";
-import today_workflow from "../../app/Assets/about/today_work.jpg";
+import mocdt_workflow from "../../app/Assets/about/room.jpg";
+import today_workflow from "../../app/Assets/about/room2.jpg";
 function SlideImage() {
   const [position, setPosition] = useState(50);
 
