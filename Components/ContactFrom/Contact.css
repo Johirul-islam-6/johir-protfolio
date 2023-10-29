@@ -1,0 +1,25 @@
+@media (max-width: 1000px) {
+  .contact-text {
+    display: none !important;
+  }
+  .icon-contact {
+    width: 10% !important;
+  }
+}
+@media (max-width: 550px) {
+  .contact-container-box {
+    display: block !important;
+  }
+  .socal-icon {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 400px) {
+  .fb {
+    display: none !important;
+  }
+  .tw {
+    display: none !important;
+  }
+}

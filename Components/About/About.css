@@ -1,0 +1,233 @@
+/* -------------about page css ----------- */
+
+.hr {
+  transition: all 3s linear;
+}
+.About:hover .hr {
+  left: 0 !important;
+}
+
+/* ================== button Slide animation ========================== */
+
+.Contact-button .btn-epic {
+  position: relative;
+  width: 160px;
+  height: 52px;
+  left: 0;
+  background: #0000000a;
+  transform: translate3d(0px, 0%, 0px);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  transition-delay: 0.5s;
+  overflow: hidden;
+}
+
+.Contact-button .btn-epic:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 160px;
+  height: 52px;
+  background: #041067;
+  transform: translateX(100%) scaleX(0.5);
+  transition: all 0.6s ease;
+}
+
+.Contact-button .btn-epic:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 160px;
+  width: 160px;
+  height: 52px;
+  background: #fd7501;
+  border-radius: 0;
+  transform: translateX(-100%) scaleX(1);
+  transition: all 0.6s ease;
+}
+
+.Contact-button .btn-epic div {
+  position: relative;
+  top: 0px;
+  width: 160px;
+  height: 52px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+/* ------------- button inside spant content ----------- */
+.Contact-button .btn-epic span {
+  position: absolute;
+  top: 15px;
+  width: 160px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.Contact-button .btn-epic span:first-child {
+  color: #fff;
+  transform: translateX(-150px);
+}
+
+.Contact-button .btn-epic span:last-child {
+  color: #ffffff;
+  transform: translateX(0);
+}
+
+/* ------------------- button hover box left to right site ---------------- */
+
+.Contact-button .btn-epic:hover {
+  height: 52px;
+  background: #041067;
+  transition: all 0.1s linear;
+  transition-delay: 0.1s;
+}
+
+.Contact-button .btn-epic:hover:after {
+  border-radius: 0 0 0% 0%;
+  transform: translateX(0%) scaleX(0.5);
+  transition-delay: 0;
+}
+
+.Contact-button .btn-epic:hover:before {
+  border-radius: 0;
+  transform: translateX(0) scaleX(2);
+  transition-delay: 0;
+}
+
+/* ----------------- button content left to right site slide ------------- */
+
+.Contact-button .btn-epic:hover span:first-child {
+  transform: translateX(0px) !important;
+}
+
+.Contact-button .btn-epic:hover span:last-child {
+  transform: translateX(200px);
+}
+
+/* ================== Download CV button Slide animation ========================== */
+
+.Download-button .btn-epic {
+  position: relative;
+  width: 160px;
+  height: 52px;
+  left: 0;
+  background: #0000000a;
+  border: 1px solid #fff;
+  transform: translate3d(0px, 0%, 0px);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  transition-delay: 0.5s;
+  overflow: hidden;
+}
+
+.Download-button .btn-epic:before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 160px;
+  height: 52px;
+  background: #fff;
+  transform: translateX(100%) scaleX(0.5);
+  transition: all 0.6s ease;
+}
+
+.Download-button .btn-epic:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 160px;
+  width: 160px;
+  height: 52px;
+  background: #0000;
+  border-radius: 0;
+  transform: translateX(-100%) scaleX(1);
+  transition: all 0.6s ease;
+}
+
+.Download-button .btn-epic div {
+  position: relative;
+  top: 0px;
+  width: 160px;
+  height: 52px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+/* ------------- button inside spant content ----------- */
+.Download-button .btn-epic span {
+  position: absolute;
+  top: 15px;
+  width: 160px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.Download-button .btn-epic span:first-child {
+  color: #252424;
+  transform: translateX(-150px);
+  position: relative;
+  z-index: 100;
+}
+
+.Download-button .btn-epic span:last-child {
+  color: #eaeaea;
+  transform: translateX(0);
+}
+
+/* ------------------- button hover box left to right site ---------------- */
+
+.Download-button .btn-epic:hover {
+  height: 52px;
+  background: #fff;
+
+  transition: all 0.1s linear;
+  transition-delay: 0.1s;
+}
+
+.Download-button .btn-epic:hover:after {
+  border-radius: 0 0 0% 0%;
+  transform: translateX(0%) scaleX(0.5);
+  transition-delay: 0;
+}
+
+.Download-button .btn-epic:hover:before {
+  border-radius: 0;
+  transform: translateX(0) scaleX(2);
+  transition-delay: 0;
+}
+
+/* ----------------- button content left to right site slide ------------- */
+
+.Download-button .btn-epic:hover span:first-child {
+  transform: translateX(0px) !important;
+}
+
+.Download-button .btn-epic:hover span:last-child {
+  transform: translateX(200px);
+}
+
+@media (max-width: 950px) {
+  .about-button-box {
+    display: flex;
+    justify-content: center !important;
+  }
+  .about-Banner {
+    flex-direction: column !important;
+  }
+  .contact-about {
+    display: flex;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 430px) {
+  .about-text {
+    text-align: center !important;
+  }
+}

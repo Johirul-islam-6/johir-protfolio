@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "swiper/css/effect-coverflow";
+@import "swiper/css/pagination";
+
+html body {
+  background: linear-gradient(90deg, #07091a, #010101) !important;
+  width: 100%;
+  height: auto !important;
+}
+html {
+  background: linear-gradient(90deg, #07091a, #010101) !important;
+  width: 100%;
+  height: auto !important;
+}
+
+.max-w-screen-xl {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+/* ----- gradient one div to ---- */
+
+.gradient-rounded-image {
+  width: 443px;
+  height: 250px;
+  flex-shrink: 0;
+  filter: blur(185px);
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  /* background: #05137b; */
+  background: linear-gradient(
+    91deg,
+    #ffd670e1,
+    #050c3f,
+    #ec70ffc0,
+    #9d70ff76,
+    #05137b
+  );
+  border-radius: 882px;
+}
+.gradient-rounded-top {
+  width: 643px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(295px);
+  position: absolute;
+  z-index: 1;
+  top: -100px;
+  background: #05137b;
+  border-radius: 882px;
+}
+/* --------------- footer -------- */
+.footer-gradient-rounded-top {
+  width: 343px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(150px);
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  background: #05137b;
+  border-radius: 882px;
+}
+
+/* ----- gradient Banner div start ---- */
+.gradient-rounded-div-left {
+  width: 643px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(295px);
+  position: absolute;
+
+  z-index: 1;
+  top: 150px;
+  background: #041067;
+  border-radius: 882px;
+}
+.gradient-rounded-div-right {
+  width: 643px;
+  height: 300px;
+  flex-shrink: 0;
+  filter: blur(295px);
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  background-color: #070727;
+}
+
+/* animations */
+.background_color_animation {
+  animation: rotateAndGlow 10s linear infinite,
+    moveBackground 20s linear infinite;
+}
+
+@keyframes rotateAndGlow {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px rgba(204, 4, 218, 0.826);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 30px #ce4f06;
+  }
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* --------- gradient div responsive ----------- */
+@media (min-width: 600px) and (max-width: 900px) {
+  .gradient-rounded-div-left {
+    width: 443px;
+    height: 220px;
+    flex-shrink: 0;
+    filter: blur(295px);
+    position: absolute;
+    top: 870px;
+  }
+  .gradient-rounded-div-right {
+    width: 443px;
+    height: 220px;
+    flex-shrink: 0;
+    filter: blur(295px);
+    position: absolute;
+    top: 870px;
+  }
+}
+@media (min-width: 200px) and (max-width: 600px) {
+  .gradient-rounded-div-left {
+    width: 283px;
+    height: 130px;
+    flex-shrink: 0;
+    filter: blur(215px);
+    position: absolute;
+    top: 970px;
+  }
+  .gradient-rounded-div-right {
+    width: 283px;
+    height: 130px;
+    flex-shrink: 0;
+    filter: blur(215px);
+    position: absolute;
+    top: 970px;
+  }
+}
+/* ----- gradient Banner div start ---- */
