@@ -8,8 +8,7 @@ import { IDo } from '@/Components/Home/IDo/IDo'
 import { About } from '@/Components/About/About'
 import Products from '@/Components/Freelancer/Products'
 import Project from '@/Components/Project/Project'
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+
 
 export default function Home() {
   return (
