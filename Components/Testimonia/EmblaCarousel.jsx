@@ -123,14 +123,14 @@ const EmblaCarousel = (props) => {
           </div>
         </div>
 
-        <div className="embla__buttons flex justify-center relative w-[50%]  md:w-[70%] md:h-[60vh]  z-[10000] ml-[45%] mx-auto">
+        <div className="embla__buttons flex justify-center relative w-[50%]  md:w-[70%] md:h-[40vh]  z-[10000] ml-[45%] mx-auto">
           <PrevButton
-            className="absolute md:mt-[220px] mt-[350px] w-[15%]  md:w-[9%] cursor-pointer bg-amber-700 rounded-full mx-auto flex justify-center py-2 hover:bg-amber-600 "
+            className="absolute md:mt-[20px] mt-[350px] w-[15%]  md:w-[9%] cursor-pointer bg-amber-700 rounded-full mx-auto flex justify-center py-2 hover:bg-amber-600 "
             onClick={scrollPrev}
             disabled={prevBtnDisabled}
           />
           <NextButton
-            className="absolute md:mt-[220px] mt-[350px] w-[15%] cursor-pointer md:w-[9%] ml-[40%] md:ml-[25%] bg-amber-700 rounded-full mx-auto flex justify-center py-2 hover:bg-amber-600"
+            className="absolute md:mt-[20px] mt-[350px] w-[15%] cursor-pointer md:w-[9%] ml-[40%] md:ml-[25%] bg-amber-700 rounded-full mx-auto flex justify-center py-2 hover:bg-amber-600"
             onClick={scrollNext}
             disabled={nextBtnDisabled}
           />

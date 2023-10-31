@@ -37,10 +37,7 @@ export const Navbar = () => {
         >
           <ul className="max-w-screen-xl navbar flex justify-between py-[2px] relative z-[100000]">
             {/* <!-- logo --> */}
-            <Link
-              href="/"
-              className="flex items-center profile p-1 bg-[#f26d4f05]  mt-[5px] "
-            >
+            <Link href="/" className="flex items-center profile p-1  mt-[5px] ">
               <div className="logo-bg flex items-center font-bold text-2xl text-amber-500">
                 <img
                   className="w-[60px] py-2 ps-2"
@@ -63,6 +60,14 @@ export const Navbar = () => {
                     href="/"
                   >
                     Home
+                  </Link>
+                </li>
+                <li className="px-4  duration-200 cursor-pointer ">
+                  <Link
+                    className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                    href="/design"
+                  >
+                    design
                   </Link>
                 </li>
                 <li className="px-4  duration-200 cursor-pointer ">

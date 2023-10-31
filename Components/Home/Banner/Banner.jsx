@@ -65,7 +65,7 @@ export const Banner = () => {
             <div className="banner-Button flex justify-start  md:mt-[80px]">
               <Link
                 href={"#services"}
-                className="btn-epic justify-center items-center bg-gradient-to-r from-[#5014B8] "
+                className="btn-epic justify-center items-center "
               >
                 <div className="hover:border-b-2 border-[#FE7E01]">
                   <span className="flex justify-center items-center ">

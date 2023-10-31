@@ -121,7 +121,7 @@ export default function Testimoniya() {
             </div>
 
             {/* review section cursel */}
-            <main className="sandbox border-x-2 border-indigo-500 ">
+            <main className="sandbox h-[350px] border-x-2 border-indigo-500 ">
               <section className="sandbox__carousel">
                 <EmblaCarousel data={data} slides={SLIDES} options={OPTIONS} />
               </section>
