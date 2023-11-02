@@ -76,19 +76,41 @@ export const Footer = () => {
               <div className="flex justify-end">
                 <ul className="Fab-Icon flex flex-wrap gap-5 text-[35px] text-[#fff]  pe-10">
                   <li>
-                    <FaFacebook />
+                    <Link
+                      href={"https://www.facebook.com/rasel2023boss"}
+                      target="blank"
+                    >
+                      <FaFacebook />
+                    </Link>
                   </li>
                   <li>
-                    <FaLinkedin />
+                    <Link
+                      href={"https://www.linkedin.com/in/johirul-islam99/"}
+                      target="blank"
+                    >
+                      <FaLinkedin />
+                    </Link>
                   </li>
                   <li>
-                    <FaTwitter />
+                    <Link
+                      href={"https://twitter.com/Masti50678584"}
+                      target="blank"
+                    >
+                      <FaTwitter />
+                    </Link>
                   </li>
                   <li>
-                    <FaGithub />
+                    <Link
+                      href={"https://github.com/Johirul-islam-6"}
+                      target="blank"
+                    >
+                      <FaGithub />
+                    </Link>
                   </li>
                   <li>
-                    <FaEnvelope />
+                    <Link href={"/"}>
+                      <FaEnvelope />
+                    </Link>
                   </li>
                 </ul>
               </div>
