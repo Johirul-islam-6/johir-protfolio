@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsFillCircleFill } from "react-icons/bs";
 
 export const IDo = () => {
@@ -65,9 +66,11 @@ export const IDo = () => {
 
                     <li className=" flex flex-wrap items-center mt-3">
                       {" "}
-                      <button className="text-[#fdfdfd] p-2 text-[15px] font-[600] underline">
-                        see design
-                      </button>
+                      <Link href="/design">
+                        <button className="text-[#fdfdfd] p-2 text-[15px] font-[600] underline">
+                          see design
+                        </button>
+                      </Link>
                     </li>
                   </ul>
                 </span>{" "}
@@ -116,9 +119,11 @@ export const IDo = () => {
 
                   <li className=" flex flex-wrap items-center mt-3">
                     {" "}
-                    <button className="text-[#fdfdfd] p-2 text-[15px] font-[600] underline">
-                      see code
-                    </button>
+                    <Link href="/project">
+                      <button className="text-[#fdfdfd] p-2 text-[15px] font-[600] underline">
+                        see code
+                      </button>
+                    </Link>
                   </li>
                 </ul>
               </p>

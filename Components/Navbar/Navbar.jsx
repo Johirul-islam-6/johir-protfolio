@@ -114,13 +114,13 @@ export const Navbar = () => {
                     Contact
                   </Link>
                 </li>
-                <li className="pe-2  duration-200 cursor-pointer ">
+                <li className="pe-4  duration-200 cursor-pointer ">
                   <Link
                     className="hover-menu logo-font text-[15px] font-[600] uppercase"
                     href="https://www.linkedin.com/in/johirul-islam99/"
                     target="blank"
                   >
-                    <Image width={25} height={20} src={linkend} alt="" />
+                    <Image width={25} height={16} src={linkend} alt="" />
                   </Link>
                 </li>
               </ul>

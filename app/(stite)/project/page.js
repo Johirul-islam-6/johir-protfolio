@@ -72,10 +72,10 @@ import image from '../../assets/design/01.png'
                 </h5>
               </a>
               <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">
-                {project?.features?.slice(0,150)}
+                {project?.features?.slice(0,120)}
               </p>
               <div className="flex justify-between items-center">
-                <p>{index*1/2+7}k view</p>
+                <p>{index*1/2+7/5}k view</p>
                 <Link
                   href="/project/1"
                   class="text-white  bg-[#F26C4F] focus:ring-4 focus:ring-blue-300 font-medium rounded-sm  text-sm px-3 py-2 text-center inline-flex items-center "
