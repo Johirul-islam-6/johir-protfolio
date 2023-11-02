@@ -1,8 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaWindowClose } from "react-icons/fa";
+import { FaLinkedin, FaWindowClose } from "react-icons/fa";
 import Link from "next/link";
 import "./Layout.css";
+
+import linkend from "../../app/assets/linkend.jpg";
+import Image from "next/image";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,6 +112,15 @@ export const Navbar = () => {
                     href="/contact"
                   >
                     Contact
+                  </Link>
+                </li>
+                <li className="pe-2  duration-200 cursor-pointer ">
+                  <Link
+                    className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                    href="https://www.linkedin.com/in/johirul-islam99/"
+                    target="blank"
+                  >
+                    <Image width={25} height={20} src={linkend} alt="" />
                   </Link>
                 </li>
               </ul>

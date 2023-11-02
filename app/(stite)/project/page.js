@@ -53,9 +53,9 @@ import image from '../../assets/design/01.png'
         <div class=" grid grid-cols-1 md:grid-cols-3 gap-5 gap-y-10 justify-between items-center ">
         
          {
-          imgss?.map(project =>{
+          imgss?.map((project, index) =>{
             return <>
-            <div class="project-card  shadow-md  rounded-lg max-w-sm bg-[#07091a]">
+            <div key={index} class="project-card  shadow-md  rounded-lg max-w-sm bg-[#07091a]">
             <div className=''>
               <img
                 // width={500}
@@ -68,15 +68,14 @@ import image from '../../assets/design/01.png'
             <div class="p-5">
               <a href="#">
                 <h5 class="card-title text-gray-900 font-bold text-[18px] tracking-tight mb-2 dark:text-white">
-                  Noteworthy technology acquisitions 2021
+                  {project?.name}
                 </h5>
               </a>
               <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
+                {project?.features?.slice(0,150)}
               </p>
               <div className="flex justify-between items-center">
-                <p>1k view</p>
+                <p>{index*1/2+7}k view</p>
                 <Link
                   href="/project/1"
                   class="text-white  bg-[#F26C4F] focus:ring-4 focus:ring-blue-300 font-medium rounded-sm  text-sm px-3 py-2 text-center inline-flex items-center "
