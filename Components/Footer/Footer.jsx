@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <>
       <footer className=" footer mt-[100px]">
-        <div className="footer-container py-20  w-[100%]  max-w-screen-xl flex md:flex-row justify-between items-center">
+        <div className="footer-container py-8  w-[100%]  max-w-screen-xl flex md:flex-row justify-between items-center">
           <div className="footer_logo w-[45%] flex justify-start items-center ">
             <div>
               <Link
@@ -36,27 +36,39 @@ export const Footer = () => {
           </div>
 
           <div className="w-full footer-item flex flex-row justify-evenly items-center ">
-            <div className="flex gap-20 justify-center items-center">
+            <div className="flex gap-20 justify-center items-center ">
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <a className="footer-link" href="/">
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a className="footer-link" href="/about">
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a className="footer-link" href="/review">
+                    reviews
+                  </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="">Home</a>
+                  <a className="footer-link" href="/project">
+                    project
+                  </a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a className="footer-link" href="/design">
+                    design
+                  </a>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <a className="footer-link" href="">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>

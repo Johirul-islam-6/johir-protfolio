@@ -12,7 +12,18 @@ import image09 from '../../assets/design/09.png'
 import image10 from '../../assets/design/10.png'
 import image11 from '../../assets/design/11.png'
 import image12 from '../../assets/design/12.png'
-import { PhotoProvider, PhotoView } from 'react-photo-view';
+
+
+import image13 from '../../assets/design/l-1.png'
+import image14 from '../../assets/design/l-3.png'
+import image15 from '../../assets/design/l-4.png'
+import image16 from '../../assets/design/l-5.png'
+import image17 from '../../assets/design/l-2.png'
+import image18 from '../../assets/design/l-6.png'
+import image19 from '../../assets/design/l-7.png'
+import image20 from '../../assets/design/l-8.png'
+import image21 from '../../assets/design/l-9.png'
+
 import '../../../node_modules/react-photo-view/dist/react-photo-view.css';
 
 
@@ -21,89 +32,159 @@ import { useState } from "react";
  const Design = () => {
 
   const project = [
+    
+   
+    
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "6",
+      Link : "https://profound-cuchufli-b18a10.netlify.app",
+      image : image18,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "Html, css, tailwind etc."
+    },
+    {
+      id: "7",
+      Link : "",
       image : image01,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "7",
+      Link : "",
       image : image02,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
+   
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "9",
+      Link : "",
       image : image03,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "10",
+      Link : "",
       image : image04,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
+   
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "10",
+      Link : "https://fifa-world-cup-2023.netlify.app/",
+      image : image19,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "Html, css, Bootstrap etc."
+    },
+    {
+      id: "11",
+      Link : "",
       image : image05,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
+     {
+      id: "10",
+      Link : "https://zesty-cheesecake-7b2b33.netlify.app/",
+      image : image21,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "JavaScript, css, tailwind etc."
+    },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "12",
+      Link : "",
       image : image06,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
+    
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "4",
+      Link : "https://symphonious-crisp-e5f04f.netlify.app",
+      image : image16,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "Html, css, Bootstrap etc."
+    },
+    {
+      id: "13",
+      Link : "",
       image : image07,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "14",
+      Link : "https://gorgeous-snickerdoodle-0ac638.netlify.app/",
+      image : image20,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "JavaScript, css, Bootstrap etc."
+    },
+      {
+      id: "3",
+      Link : "https://johir100.netlify.app",
+      image : image15,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "Html, Css, Bootstrap, ect"
+    },
+    {
+      id: "14",
+      Link : "",
       image : image08,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
+    
     {
       id: "1",
-      name : "Ema Jon today",
+      Link : "https://rasel-mocdt-mailer.netlify.app",
+      image : image13,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "React.Js, JavaScript, tailwind css ect"
+    },
+    {
+      id: "2",
+      Link : "https://wonderful-wisp-2f81f4.netlify.app",
+      image : image14,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "React,html, css, tailwind, etc."
+    },
+    {
+      id: "15",
+      Link : "",
       image : image09,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "16",
+      Link : "",
       image : image10,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "17",
+      Link : "",
       image : image11,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
     },
     {
-      id: "1",
-      name : "Ema Jon today",
+      id: "18",
+      Link : "",
       image : image12,
       paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
       technology : "React.Js, Node.js, MongoDB, REST Api, ect"
+    },
+    {
+      id: "5",
+      Link : "https://sensational-sprite-162dc6.netlify.app",
+      image : image17,
+      paragrap :  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eius accusamus expedita delectus ipsum itaque!",
+      technology : "React.Js, css, tailwind etc."
     },
   ]
 
@@ -131,8 +212,8 @@ import { useState } from "react";
                   
                     <Image width={500} height={600} className=" w-[100%] h-[100%] design-image" src={project?.image} alt='design'/>
                      <div className="overlay-design-container hidden ">
-                       <p className="underline text-[#c5c4c4] text-[14px] font-[700]">live site link</p>
-                        <p className="text-[#e4e4e4] text-[12px] font-[700] pt-3"> Next.js, Tailwind Css, Html, Css, etc</p>
+                       <a target="blank" href={project?.Link ? project?.Link : '/' } className="underline text-[#c5c4c4] text-[14px] font-[700]">live site link</a>
+                        <p className="text-[#e4e4e4] text-[12px] font-[700] pt-3"> {project?.technology}</p>
                      </div>
                  
                 

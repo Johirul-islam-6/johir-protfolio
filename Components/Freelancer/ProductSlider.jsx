@@ -81,7 +81,7 @@ const ProductSlider = () => {
               <img
                 src={item.image}
                 alt="Picture of product"
-                className="h-full object-cover w-[100%] p-2 rounded-[10%]"
+                className="h-full object-cover w-[100%] md:p-2 rounded-[10%]"
               />
               {/* <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] font-[500]">
                 {item.title}

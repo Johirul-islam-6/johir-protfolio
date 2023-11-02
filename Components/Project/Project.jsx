@@ -86,7 +86,7 @@ const Project = () => {
               <div className="mt-5">
                 <Link
                   className="flex btn btn-primary project-button"
-                  href={`/${product?.id}`}
+                  href={`/project/${product?.id}`}
                 >
                   <span className="">Details</span>
                 </Link>
@@ -97,11 +97,9 @@ const Project = () => {
         ))}
 
         <SwiperSlide>
-          <div className="w-full flex justify-center h-[90vh]">
+          <div className="w-full flex justify-center h-[90vh] items-center">
             <Link href="/project">
-              <span className="btn btn-primary mt-[70%] md:mt-[50%]">
-                More Projects..
-              </span>
+              <span className="btn btn-primary  ">More Projects..</span>
             </Link>
           </div>
         </SwiperSlide>

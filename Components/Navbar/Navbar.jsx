@@ -162,9 +162,7 @@ export const Navbar = () => {
 
                 <ul className="menu px-4 w-80 min-h-full  text-base-content bg-[#020312] pt-10">
                   <div className="flex justify-between ">
-                    <h1 className="text-white text-[18px] text-[600]">
-                      Elias Protfolio
-                    </h1>
+                    <h1 className="text-white text-[18px] text-[600]"></h1>
 
                     <label
                       onClick={() => setIsOpen(false)}
@@ -172,21 +170,83 @@ export const Navbar = () => {
                       className="z-[10]"
                     >
                       <div className="flex flex-col h-9 w-12 rounded justify-center items-center group">
-                        <FaWindowClose className="text-white h-6 w-8 mb-4" />
+                        <svg
+                          class="h-6 w-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
                       </div>
                     </label>
                   </div>
 
                   {/* Sidebar content here */}
-                  <ul className="block items-center ">
-                    <li>
-                      <a href="">Home</a>
+                  <ul className="flex flex-col gap-3  items-start">
+                    <li className="px-4  duration-200 cursor-pointer  active">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/"
+                      >
+                        Home
+                      </Link>
                     </li>
-                    <li>
-                      <a href="">about</a>
+                    <li className="px-4  duration-200 cursor-pointer ">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/design"
+                      >
+                        design
+                      </Link>
                     </li>
-                    <li>
-                      <a href="">contact</a>
+                    <li className="px-4  duration-200 cursor-pointer ">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/project"
+                      >
+                        project
+                      </Link>
+                    </li>
+                    <li className="px-4  duration-200 cursor-pointer ">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/services"
+                      >
+                        Services
+                      </Link>
+                    </li>
+
+                    <li className="px-4  duration-200 cursor-pointer ">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/reviews"
+                      >
+                        Reviews
+                      </Link>
+                    </li>
+                    <li className="px-4  duration-200 cursor-pointer ">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/about"
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li className="px-4  duration-200 cursor-pointer ">
+                      <Link
+                        className="hover-menu logo-font text-[15px] font-[600] uppercase"
+                        href="/contact"
+                      >
+                        Contact
+                      </Link>
                     </li>
                   </ul>
                 </ul>

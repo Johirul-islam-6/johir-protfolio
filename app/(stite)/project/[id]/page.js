@@ -47,11 +47,11 @@ const singelProject = () => {
     );
   }
 
-  console.log(id)
+
 
     return (
         <>
-            <div className='w-[100%]  bg-[#14213D] md:px-20'>
+            <div className='w-[100%]  bg-[#07091a] md:px-20'>
 
                 <h1 className='py-14 text-4xl text-center fonts pt-24'>{product?.name} Project Details</h1>
 

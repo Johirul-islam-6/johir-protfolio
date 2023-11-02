@@ -10,7 +10,6 @@
 .card-imgae {
   max-height: 280px !important;
   width: 100% !important;
-  padding: 5px 0;
 }
 .project-card:hover .card-imgae {
   transform: rotate(5deg);
