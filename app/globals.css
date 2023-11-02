@@ -55,10 +55,10 @@ html {
   width: 343px;
   height: 300px;
   flex-shrink: 0;
-  filter: blur(150px);
+  filter: blur(200px);
   position: absolute;
   z-index: 1;
-  top: 0px;
+  bottom: -200px;
   background: #05137b;
   border-radius: 882px;
 }

@@ -13,7 +13,7 @@ const Products = () => {
         </h5>
         <div className="divider w-[120px] mx-auto my-1 mt-2 bg-[#bb7103] h-1"></div>
 
-        <div className="mt-10">
+        <div className="mt-10 relative z-50">
           <ProductSlider />
         </div>
       </div>

@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <>
       <footer className=" footer mt-[100px]">
-        <div className="footer-container py-8  w-[100%]  max-w-screen-xl flex md:flex-row justify-between items-center">
+        <div className="footer-container py-2  w-[100%]  max-w-screen-xl flex md:flex-row justify-between items-center">
           <div className="footer_logo w-[45%] flex justify-start items-center ">
             <div>
               <Link
@@ -35,93 +35,59 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full footer-item flex flex-row justify-evenly items-center ">
-            <div className="flex gap-20 justify-center items-center ">
-              <ul>
+          <div>
+            <div className="flex justify-end ">
+              <ul className="Fab-Icon flex flex-wrap gap-5 text-[35px] text-[#fff]  pe-10 relative z-50">
                 <li>
-                  <a className="footer-link" href="/">
-                    Home
-                  </a>
+                  <Link
+                    href={"https://www.facebook.com/rasel2023boss"}
+                    target="blank"
+                  >
+                    <FaFacebook className="text-[25px]" />
+                  </Link>
                 </li>
                 <li>
-                  <a className="footer-link" href="/about">
-                    About
-                  </a>
+                  <Link
+                    href={"https://www.linkedin.com/in/johirul-islam99/"}
+                    target="blank"
+                  >
+                    <FaLinkedin className="text-[25px]" />
+                  </Link>
                 </li>
                 <li>
-                  <a className="footer-link" href="/review">
-                    reviews
-                  </a>
+                  <Link
+                    href={"https://twitter.com/Masti50678584"}
+                    target="blank"
+                  >
+                    <FaTwitter className="text-[25px]" />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={"https://github.com/Johirul-islam-6"}
+                    target="blank"
+                  >
+                    <FaGithub className="text-[25px] relative z-50" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href={"/"}>
+                    <FaEnvelope className="text-[25px] relative z-50" />
+                  </Link>
                 </li>
               </ul>
-              <ul>
-                <li>
-                  <a className="footer-link" href="/project">
-                    project
-                  </a>
-                </li>
-                <li>
-                  <a className="footer-link" href="/design">
-                    design
-                  </a>
-                </li>
-                <li>
-                  <a className="footer-link" href="">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div className="flex justify-end">
-                <ul className="Fab-Icon flex flex-wrap gap-5 text-[35px] text-[#fff]  pe-10">
-                  <li>
-                    <Link
-                      href={"https://www.facebook.com/rasel2023boss"}
-                      target="blank"
-                    >
-                      <FaFacebook />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={"https://www.linkedin.com/in/johirul-islam99/"}
-                      target="blank"
-                    >
-                      <FaLinkedin />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={"https://twitter.com/Masti50678584"}
-                      target="blank"
-                    >
-                      <FaTwitter />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={"https://github.com/Johirul-islam-6"}
-                      target="blank"
-                    >
-                      <FaGithub />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={"/"}>
-                      <FaEnvelope />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
-        <div className="absolute right-[400px]">
+
+        <div className="absolute right-[400px] ">
+          <div className="footer-gradient-rounded-top  "></div>
+        </div>
+        <div className="absolute left-[20px] ">
           <div className="footer-gradient-rounded-top  "></div>
         </div>
       </footer>
-      <h1 className="text-end flex  justify-end w-[100%] max-w-screen-xl pe-1">
+      <h1 className="text-center flex  justify-center w-[100%] max-w-screen-xl pe-1">
         ©2023 Copyright All Rights Reserved
       </h1>
     </>
