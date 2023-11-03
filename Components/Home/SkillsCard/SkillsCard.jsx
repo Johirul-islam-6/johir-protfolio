@@ -114,7 +114,7 @@ const SkillsCard = () => {
                   <h1 className="text-white pl-3 text-[20px] font-bold">
                     Prisma
                   </h1>
-                  <Image height={80} className="" src={MatarialUi} alt="" />
+                  {/* <Image height={80} className="" src={MatarialUi} alt="" /> */}
                 </div>
               </div>
               <div className="SkillCArd border10px">
@@ -122,7 +122,7 @@ const SkillsCard = () => {
                   <h1 className="text-white pl-3 text-[20px] font-bold">
                     End-Design
                   </h1>
-                  <Image height={80} className="" src={MatarialUi} alt="" />
+                  {/* <Image height={80} className="" src={MatarialUi} alt="" /> */}
                 </div>
               </div>
               <div className="SkillCArd border10px">
@@ -130,7 +130,7 @@ const SkillsCard = () => {
                   <h1 className="text-white pl-3 text-[20px] font-bold">
                     postgresql
                   </h1>
-                  <Image height={80} className="" src={MatarialUi} alt="" />
+                  {/* <Image height={80} className="" src={MatarialUi} alt="" /> */}
                 </div>
               </div>
               <div className="SkillCArd border10px">
