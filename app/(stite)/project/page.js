@@ -77,7 +77,7 @@ import image from '../../assets/design/01.png'
               <div className="flex justify-between items-center">
                 <p>{index*1/2+7/5}k view</p>
                 <Link
-                  href="/project/1"
+                  href={`/project/${project?.id}`}
                   class="text-white  bg-[#F26C4F] focus:ring-4 focus:ring-blue-300 font-medium rounded-sm  text-sm px-3 py-2 text-center inline-flex items-center "
                 >
                   Details

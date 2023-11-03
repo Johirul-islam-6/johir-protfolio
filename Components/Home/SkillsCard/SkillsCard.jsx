@@ -112,7 +112,7 @@ const SkillsCard = () => {
               <div className="SkillCArd border10px">
                 <div className="flex justify-between align-middle items-center ml-[3px] bg-[#14213D]  border10px hight-bg">
                   <h1 className="text-white pl-3 text-[20px] font-bold">
-                    Mataril
+                    Prisma
                   </h1>
                   <Image height={80} className="" src={MatarialUi} alt="" />
                 </div>
@@ -120,7 +120,7 @@ const SkillsCard = () => {
               <div className="SkillCArd border10px">
                 <div className="flex justify-between align-middle items-center ml-[3px] bg-[#14213D]  border10px hight-bg">
                   <h1 className="text-white pl-3 text-[20px] font-bold">
-                    Mataril
+                    End-Design
                   </h1>
                   <Image height={80} className="" src={MatarialUi} alt="" />
                 </div>
@@ -128,17 +128,15 @@ const SkillsCard = () => {
               <div className="SkillCArd border10px">
                 <div className="flex justify-between align-middle items-center ml-[3px] bg-[#14213D]  border10px hight-bg">
                   <h1 className="text-white pl-3 text-[20px] font-bold">
-                    Mataril
+                    postgresql
                   </h1>
                   <Image height={80} className="" src={MatarialUi} alt="" />
                 </div>
               </div>
               <div className="SkillCArd border10px">
                 <div className="flex justify-between align-middle items-center ml-[3px] bg-[#14213D]  border10px hight-bg">
-                  <h1 className="text-white pl-3 text-[20px] font-bold">
-                    Mataril
-                  </h1>
-                  <Image height={80} className="" src={MatarialUi} alt="" />
+                  <h1 className="text-white pl-3 text-[20px] font-bold">SQL</h1>
+                  {/* <Image height={80} className="" src={MatarialUi} alt="" /> */}
                 </div>
               </div>
             </div>
