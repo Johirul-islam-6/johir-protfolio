@@ -2,7 +2,7 @@
   position: relative;
   margin: 0 auto !important;
   width: 180px;
-  height: 80px;
+  height: 76px;
   background: linear-gradient(0deg, #000, #272727);
   z-index: 1;
 }
@@ -65,7 +65,7 @@
     position: relative;
     margin: 0 auto !important;
     width: 150px;
-    height: 60px;
+    height: 74px;
     background: linear-gradient(0deg, #000, #272727);
     z-index: 1;
   }

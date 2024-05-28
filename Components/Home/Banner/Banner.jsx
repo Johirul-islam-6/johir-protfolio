@@ -1,14 +1,20 @@
-// import banner from '../../../assets/bg-hero.jpg'
-// import Link from "next/link";
+"use client";
 import "./Banner.css";
 import TextChangeAnimation from "./TextChangeAnimation";
 import { FaArrowDown, FaCaretDown } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 import banner_image from "../../../app/assets/rasel.png";
+import Aos from "aos";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export const Banner = () => {
+  useEffect(() => {
+    Aos.init({
+      once: false,
+    });
+  }, []);
   return (
     <>
       {/* ------------ gradient div------- */}
@@ -16,29 +22,15 @@ export const Banner = () => {
         <div className="gradient-rounded-div-left left-[0px] background_color_animation"></div>
         <div className="gradient-rounded-div-right right-[0px] background_color_animation "></div>
       </div>
-      <div className=" banner-container h-[720px] flex md:flex-row items-center justify-between pb-10 overflow-hidden">
+      <div className=" banner-container h-[100vh] flex md:flex-row items-center justify-between pb-10 overflow-hidden">
         {/* ------------------- banner container ---------------- */}
-        <div className="banner-contain w-[60%]  items-center pt-[150px] ">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.5, ease: "easeInOut", duration: 1 }}
+          className="banner-contain w-[60%]  items-center pt-[150px] "
+        >
           <div className="block px-3 relative z-50">
-            {/* ---------socail-icon ---------- */}
-            {/* <div className="social-icon flex flex-wrap gap-3">
-              <a href="/" className="mr-3">
-                <i className="text-[20px] text-[#9E9E9E] fab fa-facebook"></i>
-              </a>
-              <a href="#" className="mr-3">
-                <i className="text-[20px] text-[#9E9E9E] fab fa-twitter"></i>
-              </a>
-              <a href="#" className="mr-3">
-                <i className="text-[20px] text-[#9E9E9E] fab fa-pinterest"></i>
-              </a>
-              <a href="#" className="mr-3">
-                <i className="text-[20px] text-[#9E9E9E] fab fa-slack"></i>
-              </a>
-              <a href="#" className="mr-3">
-                <i className="text-[20px] text-[#9E9E9E] fab fa-instagram"></i>
-              </a>
-            </div> */}
-
             {/* ---------- heading text animation---------- */}
             <div className="banner-heading-text ">
               <a className=" banner-heading" href="https://git.io/typing-svg">
@@ -55,12 +47,17 @@ export const Banner = () => {
               <TextChangeAnimation />
             </div>
             {/* -------- paragrap ------- */}
-            <p className=" work-sans pt-[50px] mb-8 text-lg lg:text-[18px] sm:mb-12 md:pe-16 text-justify">
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.2, ease: "easeInOut", duration: 1 }}
+              className=" work-sans pt-[50px] text-white mb-8 text-lg lg:text-[18px] sm:mb-12 md:pe-16 text-justify"
+            >
               Always love to learn something new . Love to get error and handle
               error . If I learn something special I share this with my friends
               . One secret about me I'm very fast learner programming is my
               Heard.
-            </p>
+            </motion.p>
             {/* ------------------------ Banner button  -------------- */}
             <div className="banner-Button flex justify-start  md:mt-[80px]">
               <Link
@@ -78,14 +75,18 @@ export const Banner = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="banner-image  w-[50%] flex justify-end">
+        </motion.div>
+
+        <div className="banner-image items-center  w-[50%] flex justify-end">
           <Image
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
             width={600}
             height={1200}
             src={banner_image}
             alt=""
-            className="object-cover relative z-50"
+            className="object-cover relative z-50 md:mt-32"
           />
         </div>
       </div>

@@ -20,7 +20,12 @@ export const IDo = () => {
         </p>
         <div className="flex md:px-16 px-5 relative z-50">
           <div className="grid lg:grid-cols-2 md:grid-col-3 grid-cols-1 gap-8 ">
-            <div class="bg-[#5014B8] p-6 rounded-2xl py-6 pb-20">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
+              class="bg-[#5014B8] p-6 rounded-2xl py-6 pb-20"
+            >
               <div class="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-2 text-[28px]">
                 <svg
                   stroke="currentColor"
@@ -44,21 +49,21 @@ export const IDo = () => {
               <div className="divider w-[120px] my-1 mb-3 bg-[#8d8c8b] h-[2px]"></div>
               <p className="text-white px-2  text-[18px] rem">
                 I am able to build a responsive website. I have almost 2 years
-                of experience and complete almost 40+ projects.. I have good
+                of experience and complete almost 30+ projects.. I have good
                 skills on Web Development please.{" "}
                 <span className="text-[#c4c3c3] ">
                   <br />
                   <br />
                   <ul>
                     <li className="flex flex-wrap items-center">
-                      ➢ HTML, CSS3, SASS, BootStrap, Tailwind, ReactBootstrap,
-                      etc..
+                      ➢ HTML, CSS3, BootStrap, Tailwind,SASS, Slider,
+                      ReactBootstrap, etc..
                     </li>
-                    <li className="flex flex-wrap items-center mt-3">
+                    <li className="flex flex-wrap items-center mt-3 text-[#cbc8cf]">
                       ➢ JavaScript, ES6, React.Js, Next.JS, Redux, API
                       Integration etc.
                     </li>
-                    <li className="flex flex-wrap items-center mt-3">
+                    <li className="flex flex-wrap items-center mt-3 text-[#cbc8cf]">
                       I have completed numerous web page design projects that
                       are fully responsive, ensuring they display perfectly on
                       any device.
@@ -67,8 +72,8 @@ export const IDo = () => {
                     <li className=" flex flex-wrap items-center mt-3">
                       {" "}
                       <Link href="/design">
-                        <button className="text-[#fdfdfd] p-2 text-[15px] font-[600] underline">
-                          see design
+                        <button className="text-[#fdfdfd] p-2 text-[15px] font-[400] underline">
+                          See Design
                         </button>
                       </Link>
                     </li>
@@ -76,7 +81,13 @@ export const IDo = () => {
                 </span>{" "}
               </p>
             </div>
-            <div class="bg-[#111b30] p-6 rounded-2xl py-6">
+
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
+              class="bg-[#111b30] p-6 rounded-2xl py-6"
+            >
               <div class="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-2 text-[28px]">
                 <svg
                   stroke="currentColor"
@@ -97,7 +108,7 @@ export const IDo = () => {
                 Backend Development
               </h4>
               <div className="divider w-[120px] my-1 mb-3 bg-[#0032b1] h-[2px]"></div>
-              <p className="px-2  text-[18px] rem">
+              <p className="px-2  text-[18px] rem text-[#d7d5da]">
                 {" "}
                 Proficient in Software Development Lifecycle (SDLC) and Node.js
                 Server Development with Modular and MVC Architectures Using
@@ -105,7 +116,7 @@ export const IDo = () => {
                 <br />
                 <br />
                 <ul>
-                  <li className="flex flex-wrap items-center">
+                  <li className="flex flex-wrap items-center text-[#cbc8cf]">
                     ➢ Modular & MVC pattern : I create servers using Node.js and
                     Express, with NoSQL (MongoDB) for data storage. My approach
                     includes Global Error Handling, Mongoose for MongoDB
@@ -120,8 +131,8 @@ export const IDo = () => {
                   <li className=" flex flex-wrap items-center mt-3">
                     {" "}
                     <Link href="/project">
-                      <button className="text-[#fdfdfd] p-2 text-[15px] font-[600] underline">
-                        see code
+                      <button className="text-[#fdfdfd] p-2 text-[15px] font-[400] underline">
+                        See Project
                       </button>
                     </Link>
                   </li>

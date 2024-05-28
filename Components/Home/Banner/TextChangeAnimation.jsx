@@ -10,8 +10,8 @@ class TextChangeAnimation extends React.Component {
         "JavaScript Developer",
         "Fron-End Developer",
         "Back-End Developer",
+        "MERN Stack Developer",
         "Creative Person",
-        "DevOps of the future",
       ],
     };
   }

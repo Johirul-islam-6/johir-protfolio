@@ -11,6 +11,8 @@ html {
   background: linear-gradient(90deg, #07091a, #010101) !important;
   width: 100%;
   height: auto !important;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .max-w-screen-xl {
