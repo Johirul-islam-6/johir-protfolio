@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaLinkedin, FaWindowClose } from "react-icons/fa";
 import Link from "next/link";
 import "./Layout.css";
-
+import logo from "@/app/assets/navbar/logo.png";
 import linkend from "../../app/assets/linkend.jpg";
 import Image from "next/image";
 
@@ -40,16 +40,15 @@ export const Navbar = () => {
         >
           <ul className="max-w-screen-xl navbar flex justify-between py-[2px] relative z-[100000]">
             {/* <!-- logo --> */}
-            <Link href="/" className="flex items-center profile p-1  mt-[5px] ">
+            <Link href="/" className="flex items-center profile p-1  mt-[0px] ">
               <div className="logo-bg flex items-center font-bold text-2xl text-amber-500">
-                <img
-                  className="w-[60px] py-2 ps-2"
-                  src="https://i.ibb.co/CtBNX5V/Untitled-1.png"
+                <Image
+                  width={0}
+                  height={0}
+                  className="w-[100px] md:ps-2"
+                  src={logo}
                   alt=""
                 />
-                <span className="text-amber-700 mt-5 absolute ml-[55px] md:ml-[63px] text-[16px] md:text-[25px] ">
-                  Protfolio
-                </span>
               </div>
               {/* <Image src={logo} className="h-11  mr-1.5" alt="Flowbite Logo" /> */}
             </Link>

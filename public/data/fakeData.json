@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Unitech Bangaladesh.com",
+    "services": "Academic Services",
+    "category": "MERN",
+    "image": "image1",
+    "Live": "https://unitechbangladesh.com"
+  },
+  {
+    "id": 2,
+    "name": "Tech Innovators",
+    "services": "Consulting",
+    "category": "Full-Stack",
+    "image": "image2",
+    "Live": "https://techinnovators.com"
+  },
+  {
+    "id": 3,
+    "name": "Eco Solutions",
+    "services": "Environmental Consulting",
+    "category": "MERN",
+    "image": "image3",
+    "Live": "https://ecosolutions.com"
+  },
+  {
+    "id": 4,
+    "name": "Health Plus",
+    "services": "Healthcare Services",
+    "category": "React",
+    "image": "image4",
+    "Live": "https://healthplus.com"
+  },
+  {
+    "id": 5,
+    "name": "EduTech World",
+    "services": "Educational Technology",
+    "category": "Next.js",
+    "image": "image5",
+    "Live": "https://edutechworld.com"
+  },
+  {
+    "id": 6,
+    "name": "Design Masters",
+    "services": "Graphic Design",
+    "category": "Front-End",
+    "image": "image6",
+    "Live": "https://designmasters.com"
+  },
+  {
+    "id": 7,
+    "name": "Foodie Haven",
+    "services": "Restaurant Management",
+    "category": "MERN",
+    "image": "image7",
+    "Live": "https://foodiehaven.com"
+  },
+  {
+    "id": 8,
+    "name": "Travel Guru",
+    "services": "Travel Booking",
+    "category": "Full-Stack",
+    "image": "image8",
+    "Live": "https://travelguru.com"
+  },
+  {
+    "id": 9,
+    "name": "Finance Hub",
+    "services": "Financial Services",
+    "category": "React",
+    "image": "image9",
+    "Live": "https://financehub.com"
+  },
+  {
+    "id": 10,
+    "name": "Media Connect",
+    "services": "Media Management",
+    "category": "Next.js",
+    "image": "image10",
+    "Live": "https://mediaconnect.com"
+  }
+]

@@ -1,0 +1,93 @@
+.group {
+  border: 3px solid #fca211a7;
+  /* padding: 8px; */
+  background: #00000045 !important;
+  transition: all 100ms ease-in;
+}
+
+.group:hover {
+  border: 3px solid #fcfcfca7;
+
+  transition: all 100ms ease-in;
+}
+.group:hover .card-hover-Image {
+  transform: scale(1.1);
+  transition: all 600ms ease-in-out;
+}
+
+.group:hover .text-container {
+  bottom: 0px !important;
+  transition: all 600ms ease-in-out;
+  /* transform: scaleY(); */
+  background: linear-gradient(90deg, #010101a6, #07091a96) !important;
+  width: 100%;
+  opacity: 1 !important;
+}
+
+/* ================= button animation start ========== */
+
+.life-button {
+  flex-shrink: 0;
+  border-radius: 8.465px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.169px;
+  position: relative;
+  z-index: 10;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(0px);
+  animation: all 2s infinite !important;
+}
+
+.life-button:hover .real-text-btn {
+  top: 40px !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.real-text-btn2 {
+  bottom: -35px !important;
+}
+
+.life-button:hover .real-text-btn2 {
+  bottom: 10px !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+/* .life-button:hover .real-text-btn2 {
+  bottom: -40px !important;
+  transition: all 0.5s ease-in-out !important;
+} */
+
+.life-button:hover {
+  border: none;
+  background: rgba(65, 69, 72, 0.1);
+}
+
+.life-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8.465px; /* Match initial border-radius */
+  padding: 1.5px;
+  background: linear-gradient(
+    91deg,
+    #ffd6708e 8.81%,
+    #ff70ac8f 29.16%,
+    #ff7c00 49.51%,
+    #9d70ffb6 69.86%,
+    #70b7ffb3 90.2%
+  );
+  -webkit-mask: linear-gradient(black 0 0) content-box,
+    linear-gradient(black 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  transition: 2s ease-in-out;
+}

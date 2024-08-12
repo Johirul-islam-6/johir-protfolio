@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.heading-font {
+  font-family: "DM Sans", sans-serif !important;
+}
+
 .bg-image {
   width: 100% !important;
   background-image: url("../../../app/assets/count.webp");
@@ -5,11 +11,10 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 400px;
+  height: 330px;
 }
 
 .H1 {
-  /* font-family: 'Avenir', sans-serif !important; */
   line-height: 75px;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
@@ -21,7 +26,6 @@
 
 .img-gradient2 {
   position: relative;
-  /* display: inline-block; */
 }
 
 @media only screen and (max-width: 765px) {
@@ -44,7 +48,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 400px;
+  height: 330px;
   display: inline-block;
   background: linear-gradient(to bottom, #18191a79 20%, #161f2fbc 80%);
   /* W3C */
@@ -56,10 +60,10 @@
 
 @media (max-width: 950px) {
   .bg-image {
-    height: 100vh !important;
+    height: 100% !important;
   }
   .img-gradient2:after {
-    height: 100vh !important;
+    height: 100% !important;
   }
 }
 @media (max-width: 450px) {

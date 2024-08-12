@@ -7,7 +7,8 @@ import { IDo } from "@/Components/Home/IDo/IDo";
 import { About } from "@/Components/About/About";
 import Products from "@/Components/Freelancer/Products";
 import Project from "@/Components/Project/Project";
-
+import { ProjectList } from "@/Components/ProjectList/ProjectList";
+import "./globals.css";
 export default function Home() {
   return (
     <>
@@ -16,10 +17,14 @@ export default function Home() {
       </div>
       <Count />
       <div className="max-w-screen-xl ">
+        <ProjectList />
+      </div>
+
+      <div className="max-w-screen-xl ">
         <SkillsCard />
         <IDo />
 
-        <Project />
+        {/* <Project /> */}
 
         <About />
         <Testimoniya />

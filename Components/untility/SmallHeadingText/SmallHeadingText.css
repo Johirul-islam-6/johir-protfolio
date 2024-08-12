@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.heading-font {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.smallTextHeading .textStock {
+  color: rgba(0, 0, 0, 0.021) !important;
+
+  -webkit-text-stroke-width: 1px !important;
+  -webkit-text-stroke-color: #ff7c00;
+  filter: blur(1px);
+
+  font-family: "DM Sans";
+  line-height: 30px;
+  /* letter-spacing: 3px !important; */
+}
+.smallTextHeading .uparText {
+  color: #f5f5f5d7;
+  font-family: "DM Sans";
+  line-height: 30px; /* 85.714% */
+  filter: blur(0px) !important;
+  /* letter-spacing: 2px !important; */
+}

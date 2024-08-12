@@ -4,12 +4,11 @@ import JavaScript from "../../../app/assets/skill/javss.png";
 import matral from "../../../app/assets/skill/matral.png";
 import jira from "../../../app/assets/skill/jira.png";
 import postman from "../../../app/assets/skill/postman.png";
-import GraphQL from "../../../app/assets/skill/GraphQL.png";
+import GraphQL from "../../../app/assets/skill/graphQl.png";
 import testing from "../../../app/assets/skill/testing.png";
 import git from "../../../app/assets/skill/git.png";
 import mySQl from "../../../app/assets/skill/sql.png";
 import postSQL from "../../../app/assets/skill/postSQL.png";
-import fire from "../../../app/assets/skill/fire.png";
 import typescript from "../../../app/assets/skill/typescript.png";
 import ReactJS from "../../../app/assets/skill/reacts.png";
 import Redux from "../../../app/assets/skill/redux.png";
@@ -22,16 +21,17 @@ import BootStrap from "../../../app/assets/skill/bootstap.png";
 import NextJS from "../../../app/assets/skill/n.png";
 import Firebase from "../../../app/assets/skill/fire.png";
 import Image from "next/image";
+import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 
 const SkillsCard = () => {
   return (
     <>
       <div id="services" className="">
         <div className="mt-[100px] text-center pb-7 md:pb-10 lg:pb-10">
-          <h5 className="font-bold text-2xl md:text-4xl lg:text-4xl uppercase">
-            Working Skill
-          </h5>
-          <div className="divider w-[120px] mx-auto my-1 mt-4 bg-[#bb7103] h-1"></div>
+          <HeadingText
+            title1={"Development Skills"}
+            title2={"Development Skills"}
+          />
         </div>
 
         <div className="mt-[40px]">

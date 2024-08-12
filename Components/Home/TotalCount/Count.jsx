@@ -13,13 +13,19 @@ export const Count = () => {
               className="block text-[17px] text-[#e1e0e0] text-center pt-5 z-50 relative left-[0px] md:left-[0px]"
             >
               <div className="block pt-12 md:pt-0">
-                <span className="md:block H1 text-[70px] md:text-[90px] text-[#FCA311] ">
-                  56%
+                <span
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  className="md:block H1 heading-font text-[70px] md:text-[90px] text-[#FF7B00] "
+                >
+                  99%
                 </span>
-                <span className="pt-2 block smallH1">
+                <span className="pt-2 block smallH1 heading-font">
                   {" "}
-                  Finishing web service
-                  <br /> Skills
+                  web Development skills
+                  <br />
+                  gained My Development life
                 </span>
               </div>
             </div>
@@ -31,10 +37,15 @@ export const Count = () => {
               className="block text-[17px] text-[#e1e0e0] text-center pt-5 z-50 my-0 md:my-0 md:mx-20 mx-0"
             >
               <div className="block">
-                <span className="md:block H1 md:text-[90px] text-[80px] text-[#FCA311] ">
-                  9+
+                <span
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  className="md:block H1 heading-font md:text-[90px] text-[80px] text-[#FF7B00] "
+                >
+                  16+
                 </span>
-                <span className="pt-3 block smallH1">
+                <span className="pt-3 block smallH1 heading-font">
                   Provide Programming <br />
                   language & Library
                 </span>
@@ -48,11 +59,16 @@ export const Count = () => {
               className="block md:hidden text-[17px] text-[#e1e0e0] pt-5 text-center z-50 relative bottom-0 left-[0px]"
             >
               <div className="block pb-12">
-                <span className="block H1 text-[90px] text-[#FCA311] pb-2">
-                  20+
+                <span
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  className="block H1 text-[90px] text-[#FF7B00] pb-2"
+                >
+                  45+
                 </span>
-                <span className="block pt-3 smallH1">
-                  Local project complite
+                <span className="block pt-3 smallH1 heading-font">
+                  projects I Participated
                   <br /> Develop Skill
                 </span>
               </div>
@@ -64,12 +80,17 @@ export const Count = () => {
               className="hidden md:block text-[17px] text-[#e1e0e0] text-center z-50 relative bottom-0 left-[0px]"
             >
               <div className="block ">
-                <span className="block H1 text-[90px] text-[#FCA311] pb-2">
+                <span
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  className="block H1 text-[90px] text-[#FF7B00] pb-2"
+                >
                   20+
                 </span>
-                <span className="block pt-3 smallH1">
-                  Local project complite
-                  <br /> Develop Skill
+                <span className="block pt-3 smallH1 heading-font">
+                  projects I Participated In
+                  <br /> My Development Life
                 </span>
               </div>
             </div>
