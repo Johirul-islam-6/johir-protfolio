@@ -258,7 +258,7 @@ export const ProjectList = () => {
             title2={activeCetagory === "All" ? "All WebSite" : activeCetagory}
           />
         </div>
-
+        {/* ------ */}
         {singnal & (activeCetagory !== "All") && (
           <div className="bg-[#000] w-[100%] h-[60vh] relative">
             {" "}
