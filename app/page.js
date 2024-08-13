@@ -12,7 +12,6 @@ import "./globals.css";
 export default function Home() {
   return (
     <>
-      {/* https://abusaid.netlify.app/#education */}
       <div className="max-w-screen-xl ">
         <Banner />
       </div>
