@@ -17,7 +17,7 @@ export const Count = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                   data-aos-delay="500"
-                  className="md:block H1 heading-font text-[70px] md:text-[90px] text-[#FF7B00] "
+                  className="md:block H1 heading-font text-[70px] md:text-[77px] text-[#FF7B00] "
                 >
                   99%
                 </span>
@@ -41,7 +41,7 @@ export const Count = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                   data-aos-delay="500"
-                  className="md:block H1 heading-font md:text-[90px] text-[80px] text-[#FF7B00] "
+                  className="md:block H1 heading-font md:text-[77px] text-[80px] text-[#FF7B00] "
                 >
                   16+
                 </span>
@@ -63,7 +63,7 @@ export const Count = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                   data-aos-delay="500"
-                  className="block H1 text-[90px] text-[#FF7B00] pb-2"
+                  className="block H1 text-[77px] text-[#FF7B00] pb-2"
                 >
                   45+
                 </span>
@@ -84,7 +84,7 @@ export const Count = () => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                   data-aos-delay="500"
-                  className="block H1 text-[90px] text-[#FF7B00] pb-2"
+                  className="block H1 text-[77px] text-[#FF7B00] pb-2"
                 >
                   20+
                 </span>
