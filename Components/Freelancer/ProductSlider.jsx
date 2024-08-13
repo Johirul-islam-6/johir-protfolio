@@ -77,15 +77,12 @@ const ProductSlider = () => {
       >
         {products?.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-black border border-[#414548] p-[5px] xl:w-[280px] 2xl:w-[320px] sm:h-[115px] h-[90px] rounded-[10px] flex gap-2 items-center justify-center">
+            <div className="bg-[#00000016] overflow-hidden border border-[#414548]  md:w-[260px] h-[90px] rounded-[10px] flex gap-2 items-center justify-center">
               <img
                 src={item.image}
                 alt="Picture of product"
-                className="h-full object-cover w-[100%] md:p-2 rounded-[10%]"
+                className=" object-cover "
               />
-              {/* <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] font-[500]">
-                {item.title}
-              </p> */}
             </div>
           </SwiperSlide>
         ))}

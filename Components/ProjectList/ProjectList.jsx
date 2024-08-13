@@ -176,7 +176,7 @@ export const ProjectList = () => {
 
   return (
     <>
-      <div className="pt-16">
+      <div className="pt-[160px]">
         <HeadingText
           title1={"Here Are My Projects"}
           title2={"Here Are My Projects"}
@@ -256,7 +256,13 @@ export const ProjectList = () => {
         <div className="title py-10">
           <SmallHeadingText
             title1={activeCetagory === "All" ? "All WebSite" : activeCetagory}
-            title2={activeCetagory === "All" ? "All WebSite" : activeCetagory}
+            title2={
+              singnal
+                ? "Waiting ...!"
+                : activeCetagory === "All"
+                ? "All WebSite"
+                : activeCetagory
+            }
           />
         </div>
 
@@ -267,83 +273,83 @@ export const ProjectList = () => {
             }`}
           >
             {" "}
-            <div className="flex w-[100%] h-[80vh] md:h-[60vh] justify-center items-center duration-200 ease-out">
+            <div className="flex w-[100%] absolute h-[80vh] md:h-[60vh] justify-center items-center duration-200 ease-out">
               <Image width={220} height={220} src={Roket} alt="" />
             </div>
           </div>
-        ) : null}
-
-        <div className=" grid md:grid-cols-3 lg:grid-cols-3 justify-center md:justify-start gap-y-8 gap-x-0 items-center overflow-hidden">
-          {/* -------card maping----- */}
-          {projects?.slice(0, 6)?.map((item, index) => (
-            <div
-              data-aos="fade-up"
-              data-aos-duration={`${
-                index == index / 2 ? index * 8 : index * 9
-              }00`}
-              data-aos-delay="500"
-              key={index}
-              className="relative max-w-sm flex flex-col bg-white shadow-lg rounded-lg overflow-hidden group"
-            >
-              <Image
-                width={1250}
-                height={1200}
-                className="card-hover-Image h-[320px] w-[100%] object-cover rounded-lg"
-                src={item?.image}
-                alt="Car"
-              />
-              <div className="py-3 px-2 text-container absolute bottom-[-20px] z-[200] w-[100%] opacity-0 flex flex-col items-center">
-                <h2 className="text-[17px] font-bold text-start w-[100%]">
-                  {item?.name}
-                </h2>
-                <div className="flex w-[100%] justify-between pt-2">
-                  <p className="text-[14px] font-bold">{item?.services}</p>
-                  <a
-                    href="#"
-                    className="px-2 py-1 text-blue-300 text-[14px] font-bold hover:bg-[#B45309] hover:text-white border-x-2 flex justify-center items-center gap-1"
-                  >
-                    view live
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width={20}
-                      height={20}
-                      color={"#fff"}
-                      fill={"none"}
+        ) : (
+          <div className=" grid md:grid-cols-3 lg:grid-cols-3 justify-center md:justify-start gap-y-8 gap-x-0 items-center overflow-hidden">
+            {/* -------card maping----- */}
+            {projects?.slice(0, 6)?.map((item, index) => (
+              <div
+                data-aos="fade-up"
+                data-aos-duration={`${
+                  index == index / 2 ? index * 8 : index * 9
+                }00`}
+                // data-aos-delay="500"
+                key={index}
+                className="relative max-w-sm flex flex-col bg-white shadow-lg rounded-lg overflow-hidden group"
+              >
+                <Image
+                  width={1250}
+                  height={1200}
+                  className="card-hover-Image h-[320px] w-[100%] object-cover rounded-lg"
+                  src={item?.image}
+                  alt="Car"
+                />
+                <div className="py-3 px-2 text-container absolute bottom-[-20px] z-[200] w-[100%] opacity-0 flex flex-col items-center">
+                  <h2 className="text-[17px] font-bold text-start w-[100%]">
+                    {item?.name}
+                  </h2>
+                  <div className="flex w-[100%] justify-between pt-2">
+                    <p className="text-[14px] font-bold">{item?.services}</p>
+                    <a
+                      href="#"
+                      className="px-2 py-1 text-blue-300 text-[14px] font-bold hover:bg-[#B45309] hover:text-white border-x-2 flex justify-center items-center gap-1"
                     >
-                      <path
-                        d="M10 13.229C10.1416 13.4609 10.3097 13.6804 10.5042 13.8828C11.7117 15.1395 13.5522 15.336 14.9576 14.4722C15.218 14.3121 15.4634 14.1157 15.6872 13.8828L18.9266 10.5114C20.3578 9.02184 20.3578 6.60676 18.9266 5.11718C17.4953 3.6276 15.1748 3.62761 13.7435 5.11718L13.03 5.85978"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M10.9703 18.14L10.2565 18.8828C8.82526 20.3724 6.50471 20.3724 5.07345 18.8828C3.64218 17.3932 3.64218 14.9782 5.07345 13.4886L8.31287 10.1172C9.74413 8.62761 12.0647 8.6276 13.4959 10.1172C13.6904 10.3195 13.8584 10.539 14 10.7708"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M21.0001 16H18.9212M16.0001 21L16.0001 18.9211"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M3.00009 8H5.07898M8.00009 3L8.00009 5.07889"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
+                      view live
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width={20}
+                        height={20}
+                        color={"#fff"}
+                        fill={"none"}
+                      >
+                        <path
+                          d="M10 13.229C10.1416 13.4609 10.3097 13.6804 10.5042 13.8828C11.7117 15.1395 13.5522 15.336 14.9576 14.4722C15.218 14.3121 15.4634 14.1157 15.6872 13.8828L18.9266 10.5114C20.3578 9.02184 20.3578 6.60676 18.9266 5.11718C17.4953 3.6276 15.1748 3.62761 13.7435 5.11718L13.03 5.85978"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                        />
+                        <path
+                          d="M10.9703 18.14L10.2565 18.8828C8.82526 20.3724 6.50471 20.3724 5.07345 18.8828C3.64218 17.3932 3.64218 14.9782 5.07345 13.4886L8.31287 10.1172C9.74413 8.62761 12.0647 8.6276 13.4959 10.1172C13.6904 10.3195 13.8584 10.539 14 10.7708"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                        />
+                        <path
+                          d="M21.0001 16H18.9212M16.0001 21L16.0001 18.9211"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M3.00009 8H5.07898M8.00009 3L8.00009 5.07889"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );

@@ -16,22 +16,22 @@ function SlideImage() {
     <>
       <div>
         <div
-          className="slider-container border-2"
+          className="slider-container border-2 "
           style={{ "--position": `${position}%` }}
         >
           <div className="workflow_image_container h-full object-cover p-5">
             <Image
-              className="image-before slider-image object-cover"
-              width={500}
-              height={400}
+              className="image-before slider-image object-cover "
+              width={700}
+              height={700}
               src={today_workflow}
               alt="color photo"
               loading="lazy"
             />
             <Image
               className="image-after  object-cover"
-              width={500}
-              height={400}
+              width={700}
+              height={700}
               src={mocdt_workflow}
               alt="color photo"
               loading="lazy"

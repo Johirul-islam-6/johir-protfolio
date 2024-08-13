@@ -6,9 +6,11 @@ import { ContactFrom } from "@/Components/ContactFrom/ContactFrom";
 import { IDo } from "@/Components/Home/IDo/IDo";
 import { About } from "@/Components/About/About";
 import Products from "@/Components/Freelancer/Products";
-import Project from "@/Components/Project/Project";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { ProjectList } from "@/Components/ProjectList/ProjectList";
 import "./globals.css";
+
 export default function Home() {
   return (
     <>
@@ -17,15 +19,10 @@ export default function Home() {
       </div>
       <Count />
       <div className="max-w-screen-xl ">
+        <About />
         <ProjectList />
-      </div>
-      <div className="max-w-screen-xl ">
         <SkillsCard />
         <IDo />
-
-        {/* <Project /> */}
-
-        <About />
         <Testimoniya />
         <ContactFrom />
       </div>
