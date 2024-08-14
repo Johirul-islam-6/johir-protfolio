@@ -20,6 +20,9 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+.bg-color {
+  background: linear-gradient(90deg, #07091a, #07091a) !important;
+}
 
 .max-w-screen-xl {
   max-width: 1450px;

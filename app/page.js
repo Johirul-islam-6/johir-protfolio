@@ -11,6 +11,7 @@ import { ProjectList } from "@/Components/ProjectList/ProjectList";
 import "./globals.css";
 import { Reviews } from "@/Components/Review/Reviews";
 import { Services } from "@/Components/Home/Services/Services";
+import { Accrodion } from "@/Components/Accrodion/Accrodion";
 
 export default function Home() {
   return (
@@ -27,8 +28,11 @@ export default function Home() {
 
         <Reviews />
         <ContactFrom />
+        <Accrodion />
       </div>
-      <Products />
+      <div className="sm:max-w-[1400px] mx-auto md:max-w-[100%] overflow-hidden">
+        <Products />
+      </div>
     </>
   );
 }

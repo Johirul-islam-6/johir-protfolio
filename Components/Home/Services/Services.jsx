@@ -1,5 +1,9 @@
 import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
-import Link from "next/link";
+import img1 from "@/app/assets/services/design.gif";
+import img2 from "@/app/assets/services/backend.gif";
+import img3 from "@/app/assets/services/hosting.jpg";
+import Image from "next/image";
+import "./Serveces.css";
 
 export const Services = () => {
   return (
@@ -10,7 +14,95 @@ export const Services = () => {
           <div className="gradient-rounded-top right-[0px]"></div>
         </div>
         <HeadingText title1={"My Services"} title2={"My Services"} />
-        <div className="mt-20 flex md:px-16 px-5 relative z-50">
+        <p className="text-center py-3 text-[18px]">
+          Lorem ipsum dolor sit amet consectetur adipisicing{" "}
+          <br className="hidden md:block" /> elit. Aut mollitia voluptatem fugit
+          ullam ea
+        </p>
+
+        <div className="mt-20 px-2 md:px-0">
+          <div className="grid md:grid-cols-3 gap-10 justify-center items-center">
+            <div className="relative cursor-pointer serveices-card border-2 h-[300px] flex flex-col items-center justify-center">
+              <Image
+                width={1200}
+                height={0}
+                className="h-[300px]"
+                src={img1}
+                alt=""
+              />
+              <div className="absolute w-[100%] h-[300px] items-center justify-center flex flex-col">
+                <div className="bg-color bg-srverces-div py-3 w-[100%] flex flex-col justify-center items-center">
+                  <h1 className="text-[22px] font-bold text-center text-[#fff]">
+                    Front End Design <br className="" /> & Development
+                  </h1>
+                  <p className="text-center pt-2  text-[14px] text-[#ffffff8f]">
+                    full Responsive any Devices
+                  </p>
+                </div>
+
+                <div className="details-servecis-btn hidden duration-300 ease-linear mt-1">
+                  <p className="text-center px-3 py-1 bg-amber-700 text-[14px] text-[#ffffff]">
+                    Details
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative cursor-pointer serveices-card border-2 h-[300px] flex flex-col items-center justify-center">
+              <Image
+                width={1200}
+                height={0}
+                className="h-[300px]"
+                src={img2}
+                alt=""
+              />
+              <div className="absolute  w-[100%] h-[300px] items-center justify-center flex flex-col">
+                <div className="bg-color bg-srverces-div py-3 w-[100%] flex flex-col justify-center items-center">
+                  <h1 className="text-[22px] font-bold text-center text-[#fff]">
+                    Back End Development
+                    <br className="" /> in Node.js
+                  </h1>
+                  <p className="text-center pt-2  text-[14px] text-[#ffffff8f]">
+                    Custom Server
+                  </p>
+                </div>
+
+                <div className="details-servecis-btn hidden duration-300 ease-linear mt-1">
+                  <p className="text-center px-3 py-1 bg-amber-700 text-[14px] text-[#ffffff]">
+                    Details
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative cursor-pointer serveices-card border-2 h-[300px] flex flex-col items-center justify-center">
+              <Image
+                width={1200}
+                height={0}
+                className="h-[300px]"
+                src={img3}
+                alt=""
+              />
+              <div className="absolute  w-[100%] h-[300px] items-center justify-center flex flex-col">
+                <div className="bg-color bg-srverces-div py-3 w-[100%] flex flex-col justify-center items-center">
+                  <h1 className="text-[22px] font-bold text-center text-[#fff]">
+                    Live stite Purchase
+                    <br className="" /> Domain & hosting
+                  </h1>
+                  <p className="text-center pt-2  text-[14px] text-[#ffffff8f]">
+                    Static, VPS, MERN, etc
+                  </p>
+                </div>
+
+                <div className="details-servecis-btn hidden duration-300 ease-linear mt-1">
+                  <p className="text-center px-3 py-1 bg-amber-700 text-[14px] text-[#ffffff]">
+                    Details
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="mt-20 flex md:px-16 px-5 relative z-50">
           <div className="grid lg:grid-cols-2 md:grid-col-3 grid-cols-1 gap-8 ">
             <div
               data-aos="fade-right"
@@ -132,7 +224,7 @@ export const Services = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -1,0 +1,8 @@
+.serveices-card:hover .details-servecis-btn {
+  display: flex !important;
+  transition: all 2s ease-in !important;
+}
+.serveices-card:hover .bg-srverces-div {
+  display: none !important;
+  transition: all 2s ease-in !important;
+}
