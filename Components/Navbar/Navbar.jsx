@@ -64,18 +64,11 @@ export const Navbar = () => {
                     Home
                   </Link>
                 </li>
+
                 <li className="px-4  duration-200 cursor-pointer ">
                   <Link
                     className="hover-menu logo-font text-[15px] font-[600] uppercase"
-                    href="/design"
-                  >
-                    design
-                  </Link>
-                </li>
-                <li className="px-4  duration-200 cursor-pointer ">
-                  <Link
-                    className="hover-menu logo-font text-[15px] font-[600] uppercase"
-                    href="/project"
+                    href="#projects"
                   >
                     project
                   </Link>
@@ -83,7 +76,7 @@ export const Navbar = () => {
                 <li className="px-4  duration-200 cursor-pointer ">
                   <Link
                     className="hover-menu logo-font text-[15px] font-[600] uppercase"
-                    href="/services"
+                    href="#services"
                   >
                     Services
                   </Link>
@@ -92,7 +85,7 @@ export const Navbar = () => {
                 <li className="px-4  duration-200 cursor-pointer ">
                   <Link
                     className="hover-menu logo-font text-[15px] font-[600] uppercase"
-                    href="/reviews"
+                    href="#reviews"
                   >
                     Reviews
                   </Link>
@@ -100,7 +93,7 @@ export const Navbar = () => {
                 <li className="px-4  duration-200 cursor-pointer ">
                   <Link
                     className="hover-menu logo-font text-[15px] font-[600] uppercase"
-                    href="/about"
+                    href="#about"
                   >
                     About
                   </Link>
@@ -108,7 +101,7 @@ export const Navbar = () => {
                 <li className="px-4  duration-200 cursor-pointer ">
                   <Link
                     className="hover-menu logo-font text-[15px] font-[600] uppercase"
-                    href="/contact"
+                    href="#contact"
                   >
                     Contact
                   </Link>

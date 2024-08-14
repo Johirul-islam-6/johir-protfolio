@@ -2,18 +2,15 @@ import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 import Link from "next/link";
 import { BsFillCircleFill } from "react-icons/bs";
 
-export const IDo = () => {
+export const Services = () => {
   return (
     <>
-      <div className="IDo pb-16 mt-[120px] ">
+      <div id="services" className="IDo pb-16 mt-[120px] ">
         {/* ------------ gradient div------- */}
         <div className="relative">
           <div className="gradient-rounded-top right-[0px]"></div>
         </div>
-        <HeadingText
-          title1={"Development Skills"}
-          title2={"Development Skills"}
-        />
+        <HeadingText title1={"My Services"} title2={"My Services"} />
         <div className="mt-20 flex md:px-16 px-5 relative z-50">
           <div className="grid lg:grid-cols-2 md:grid-col-3 grid-cols-1 gap-8 ">
             <div

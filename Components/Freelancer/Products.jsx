@@ -14,7 +14,7 @@ const Products = () => {
           title2={"  Online Marketplaces"}
         />
 
-        <div className="mt-10 relative z-50">
+        <div className="mt-20 relative z-50">
           <ProductSlider />
         </div>
       </div>

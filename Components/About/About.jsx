@@ -24,7 +24,7 @@ export const About = () => {
   return (
     <>
       {/* ------------- about information --------- */}
-      <div className="About pt-[60px] ">
+      <div id="about" className="About pt-[60px] ">
         <HeadingText title1={"About Me"} title2={"About"} />
         <div className="block px-3 padding-1000px-in pt-[40px]">
           {/* ----------------------- about content ----------------- */}

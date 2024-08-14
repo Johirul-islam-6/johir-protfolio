@@ -176,7 +176,7 @@ export const ProjectList = () => {
 
   return (
     <>
-      <div className="pt-[160px]">
+      <div id="projects" className="pt-[160px]">
         <HeadingText
           title1={"Here Are My Projects"}
           title2={"Here Are My Projects"}

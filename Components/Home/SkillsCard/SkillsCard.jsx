@@ -26,7 +26,7 @@ import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 const SkillsCard = () => {
   return (
     <>
-      <div id="services" className="">
+      <div className="">
         <div className="mt-[100px] text-center pb-7 md:pb-10 lg:pb-10">
           <HeadingText
             title1={"Development Skills"}
