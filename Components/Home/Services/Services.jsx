@@ -1,6 +1,5 @@
 import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 import Link from "next/link";
-import { BsFillCircleFill } from "react-icons/bs";
 
 export const Services = () => {
   return (
