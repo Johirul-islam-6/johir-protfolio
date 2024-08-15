@@ -41,9 +41,12 @@ export const Services = () => {
                 </div>
 
                 <div className="details-servecis-btn hidden duration-300 ease-linear mt-1">
-                  <p className="text-center px-3 py-1 bg-amber-700 text-[14px] text-[#ffffff]">
+                  <a
+                    href="#faqs-title-0"
+                    className="text-center px-3 py-1 bg-amber-700 text-[14px] text-[#ffffff]"
+                  >
                     Details
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

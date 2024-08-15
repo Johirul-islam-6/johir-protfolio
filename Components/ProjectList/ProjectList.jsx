@@ -7,6 +7,18 @@ import image1 from "@/app/assets/design/01.png";
 import { HeadingText } from "../untility/HeadingText/HeadingText";
 import { useEffect, useState } from "react";
 import { SmallHeadingText } from "../untility/SmallHeadingText/SmallHeadingText";
+// image
+import phonix from "@/app/assets/projects/phonix.png";
+import unar from "@/app/assets/projects/unar.png";
+import mocdit from "@/app/assets/projects/mocdt.png";
+import uabout from "@/app/assets/projects/uabout.png";
+import tarvel from "@/app/assets/projects/tarvel.png";
+//MERN
+import resel from "@/app/assets/projects/MERN/resell.png";
+import fernicar from "@/app/assets/projects/MERN/fernicar.png";
+import dental from "@/app/assets/projects/MERN/dental.png";
+import event from "@/app/assets/projects/MERN/event.png";
+import unitech from "@/app/assets/projects/MERN/unitech.png";
 
 export const ProjectList = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -15,114 +27,128 @@ export const ProjectList = () => {
   const [singnal, setSignal] = useState(false);
 
   const allSite = [
+    // ----
+    {
+      id: 10,
+      name: "Unitech Bangaladesh",
+      services: "Academic Services",
+      category: "live",
+      All: "All",
+      Live: "Live",
+      image: unitech,
+      Live: "/liveDetails",
+    },
+
     {
       id: 1,
-      name: "Unitech Bangaladesh.com",
+      name: "Phoenix dark/light",
+      services: "Landing Page",
+      category: "front-end",
+      All: "All",
+      Live: "Live",
+      image: phonix,
+      Live: "https://wonderful-wisp-2f81f4.netlify.app/",
+    },
+    {
+      id: 2,
+      name: "Unitech Architctural",
+      services: "Landing Page",
+      category: "front-end",
+      All: "All",
+      Live: "Live",
+      image: unar,
+      Live: "https://unitechbangladesh.com/unitech-architctural",
+    },
+    {
+      id: 3,
+      name: "Mocdt Product",
+      services: "Product Review",
+      category: "front-end",
+      All: "All",
+      Live: "Live",
+      image: mocdit,
+      Live: "https://mocdt.vercel.app/",
+    },
+    {
+      id: 5,
+      name: "travel-xone",
+      services: "Travel Page",
+      category: "front-end",
+      All: "All",
+      Live: "Live",
+      image: tarvel,
+      Live: "https://travel-xone-2023.vercel.app/",
+    },
+    {
+      id: 4,
+      name: "About Info",
+      services: "Landing Page",
+      category: "front-end",
+      All: "All",
+      Live: "Live",
+      image: uabout,
+      Live: "https://unitechbangladesh.com/about",
+    },
+
+    //  ------
+    {
+      id: 6,
+      name: "Unitech Bangaladesh",
       services: "Academic Services",
       category: "MERN",
       All: "All",
       Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 2,
-      name: "Tech Innovators",
-      services: "Consulting",
-      category: "front-end",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 3,
-      name: "Eco Solutions",
-      services: "Environmental Consulting",
-      category: "MERN",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 4,
-      name: "Health Plus",
-      services: "Healthcare Services",
-      category: "front-end",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 5,
-      name: "EduTech World",
-      services: "Educational Technology",
-      category: "front-end",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 6,
-      name: "Design Masters",
-      services: "Graphic Design",
-      category: "wordpress",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 7,
-      name: "Foodie Haven",
-      services: "Restaurant Management",
-      category: "MERN",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
-    },
-    {
-      id: 8,
-      name: "Travel Guru",
-      services: "Travel Booking",
-      category: "wordpress",
-      All: "All",
-      Live: "Live",
-      image: image1,
-      Live: "https://",
+      image: unitech,
+      Live: "https://unitechbangladesh.com/",
     },
     {
       id: 9,
-      name: "Finance Hub",
-      services: "Financial Services",
-      category: "React",
+      name: "resell Book",
+      services: "Store Management",
+      category: "MERN",
       All: "All",
       Live: "Live",
-      image: image1,
-      Live: "https://",
+      image: resel,
+      Live: "https://resell-book-store.vercel.app/",
     },
     {
-      id: 10,
-      name: "Media Connect",
-      services: "Media Management",
-      category: "Next.js",
+      id: 7,
+      name: "Furniture Zoon",
+      services: "furniture store",
+      category: "MERN",
       All: "All",
       Live: "Live",
-      image: image1,
-      Live: "https://",
+      image: fernicar,
+      Live: "https://furniture-zoon.web.app/",
+    },
+    {
+      id: 8,
+      name: "Doctor Portal",
+      services: "Appointments Booking",
+      category: "MERN",
+      All: "All",
+      Live: "Live",
+      image: dental,
+      Live: "https://doctor-portal-b10c4.web.app/",
+    },
+    {
+      id: 9,
+      name: "Event Management",
+      services: "Management",
+      category: "MERN",
+      All: "All",
+      Live: "Live",
+      image: event,
+      Live: "https://event-management-client.vercel.app/",
     },
   ];
 
   const buttonText = [
     { cetagory: "All", name: "All", total: allSite?.length },
-    { cetagory: "front-end", name: "Front-End Design", total: "6" },
-    { cetagory: "MERN", name: "MERN Stack", total: "4" },
+    { cetagory: "front-end", name: "Front-End Design", total: "5" },
+    { cetagory: "MERN", name: "MERN Stack", total: "5" },
     { cetagory: "wordpress", name: "Wordpress", total: "2" },
-    { cetagory: "live", name: "Live Hosting", total: "2" },
+    { cetagory: "live", name: "Live Hosting", total: "1" },
   ];
 
   const handleButtonClick = (index, name) => {
@@ -160,6 +186,14 @@ export const ProjectList = () => {
         }
         // only front-End Stack project
         if (activeCetagory === "wordpress") {
+          const result = allSite?.filter(
+            (item) => item?.category === activeCetagory
+          );
+          setSignal(false);
+          return setprojects(result);
+        }
+        // only front-End Stack project
+        if (activeCetagory === "live") {
           const result = allSite?.filter(
             (item) => item?.category === activeCetagory
           );
@@ -293,7 +327,7 @@ export const ProjectList = () => {
                 <Image
                   width={1250}
                   height={1200}
-                  className="card-hover-Image h-[320px] w-[100%] object-cover rounded-lg"
+                  className="card-hover-Image h-[320px] w-[100%] object-fill rounded-lg"
                   src={item?.image}
                   alt="Car"
                 />
@@ -304,7 +338,8 @@ export const ProjectList = () => {
                   <div className="flex w-[100%] justify-between pt-2">
                     <p className="text-[14px] font-bold">{item?.services}</p>
                     <a
-                      href="#"
+                      target="_blank"
+                      href={item?.Live}
                       className="px-2 py-1 text-blue-300 text-[14px] font-bold hover:bg-[#B45309] hover:text-white border-x-2 flex justify-center items-center gap-1"
                     >
                       view live

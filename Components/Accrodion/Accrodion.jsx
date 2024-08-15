@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { HeadingText } from "../untility/HeadingText/HeadingText";
 
 export const Accrodion = () => {
   const [expandedItems, setExpandedItems] = useState({});
@@ -12,41 +13,23 @@ export const Accrodion = () => {
 
   const faqItems = [
     {
-      question: "What are the advantages of your service?",
+      question: "I am working on a Front End Design & Development System.",
       answer:
         "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+      cetagory: "front-end",
     },
     {
       question:
         "Are there any fees or commissions in addition to the monthly subscription?",
       answer:
         "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+      cetagory: "back-end",
     },
     {
       question: "You really don't charge per user? Why not?",
       answer:
         "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
-    },
-    {
-      question: "What happens when I go over my monthly active limit?",
-      answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
-    },
-    {
-      question:
-        "Can your service help me understand how to work with my product?",
-      answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
-    },
-    {
-      question: "Which third-party application do you integrate with?",
-      answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
-    },
-    {
-      question: "I have another question!",
-      answer:
-        "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.",
+      cetagory: "hosting",
     },
   ];
 
@@ -54,9 +37,10 @@ export const Accrodion = () => {
     <div className="relative font-inter antialiased">
       <main className="relative  flex flex-col justify-center bg-color overflow-hidden">
         <div className="w-full  mx-auto px-4 md:px-6 py-24">
-          <h1 className="text-2xl font-bold text-slate-900 mb-4">FAQs</h1>
-
-          <div className="divide-y divide-slate-200">
+          <span className="">
+            <HeadingText title1={"FAQs"} title2={"FAQs"} />
+          </span>
+          <div className="">
             {faqItems.map((item, index) => (
               <div key={index} className="py-2">
                 <h2>
@@ -68,32 +52,36 @@ export const Accrodion = () => {
                     aria-expanded={expandedItems[index]}
                     aria-controls={`faqs-text-${index}`}
                   >
-                    <span>{item.question}</span>
-                    <svg
-                      className="fill-indigo-500 shrink-0 ml-8"
-                      width="16"
-                      height="16"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="7"
-                        width="16"
-                        height="2"
-                        rx="1"
-                        className={`transform origin-center transition duration-200 ease-out ${
-                          expandedItems[index] ? "!rotate-180" : ""
-                        }`}
-                      />
-                      <rect
-                        y="7"
-                        width="16"
-                        height="2"
-                        rx="1"
-                        className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-                          expandedItems[index] ? "!rotate-180" : ""
-                        }`}
-                      />
-                    </svg>
+                    <span className="md:text-[20px]">
+                      {index + 1}. {item.question}
+                    </span>
+                    <span className="">
+                      <svg
+                        className="fill-indigo-500 shrink-0 ml-8"
+                        width="30"
+                        height="30"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          y="14"
+                          width="40"
+                          height="2"
+                          rx="10"
+                          className={`transform origin-center  transition duration-200 ease-out ${
+                            expandedItems[index] ? "!rotate-45" : ""
+                          }`}
+                        />
+                        <rect
+                          y="12"
+                          width="40"
+                          height="2"
+                          rx="10"
+                          className={`transform origin-center  rotate-90 transition duration-200 ease-out ${
+                            expandedItems[index] ? "!rotate-45" : ""
+                          }`}
+                        />
+                      </svg>
+                    </span>
                   </button>
                 </h2>
                 <div
@@ -107,7 +95,117 @@ export const Accrodion = () => {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="pb-3">{item.answer}</p>
+                    <p className="pb-3 pt-1 text-[18px] text-[#767676e7]">
+                      {item?.cetagory === "front-end" && (
+                        <div className="grid md:grid-cols-2 gap-5 grid-cols-1 ">
+                          <div>
+                            <p
+                              id="front-end "
+                              className="font-bold text-[#cc51439e]"
+                            >
+                              *Front End Desing{" "}
+                            </p>
+                            <p className="pt-2 ps-2">
+                              As a front-end developer, I've completed fully
+                              responsive designs for any device using various
+                              tools and technologies
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span> Figma
+                              designs to Converted code.
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span> PDF Design
+                              to Converted code.
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              Any Idea design to responsive code
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              Landing Page Design
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              Business Page Design
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              E-commerce Page Design
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              Portfolio Page Design
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              or More Designs...
+                            </p>
+                          </div>
+                          <div>
+                            <p
+                              id="front-end"
+                              className="font-bold text-[#cc51439e]"
+                            >
+                              *Front End Development{" "}
+                            </p>
+                            <p className="pt-2 ps-2">
+                              As a front-end developer, handle API integration
+                              for CRUD and authentication, and ensure
+                              user-friendly experiences Design.
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span> API
+                              Integration.
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>{" "}
+                              Authentication protocols
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span> Searching,
+                              Pagination, Filtering etc.
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>{" "}
+                              Performance Optimization
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              Testing and Debugging
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              User Experience (UX) Enhancements
+                            </p>
+
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              <span className="font-[900] ">- </span>
+                              Portfolio Page Design
+                            </p>
+                            <p className="pt-2 ps-3 text-[#ffffff97]">
+                              {" "}
+                              or More Designs...
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -116,15 +214,7 @@ export const Accrodion = () => {
         </div>
       </main>
 
-      <footer className="absolute left-6 right-6 md:left-12 md:right-auto bottom-4 md:bottom-8 text-center md:text-left">
-        <a
-          className="text-xs text-slate-500 hover:underline"
-          href="https://cruip.com"
-        >
-          &copy;Cruip - Tailwind CSS templates
-        </a>
-      </footer>
-
+      {/* ------- fixed btn ---------- */}
       <div
         className={`fixed bottom-0 right-0 w-full md:bottom-6 md:right-12 md:w-auto z-50 ${
           bannerOpen ? "" : "hidden"

@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaLinkedin, FaWindowClose } from "react-icons/fa";
 import Link from "next/link";
 import "./Layout.css";
 import logo from "@/app/assets/navbar/logo.png";
