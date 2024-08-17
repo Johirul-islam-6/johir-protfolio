@@ -28,19 +28,19 @@ export const ContactFrom = () => {
                   <div class="md:socal-icon flex flex-col md:block w-[100%] gap-5">
                     <div class="flex flex-col justify-center items-center border-2 md:p-5 p-4">
                       <FaEnvelope className="text-[28px]" />
-                      <p class="pt-2  dark:text-white  text-[16px]">
+                      <p class="pt-2  text-white  text-[16px]">
                         johirulislam574206@gmail.com
                       </p>
                     </div>
                     <div class="flex flex-col justify-center items-center border-2 md:p-5 p-4 md:my-5">
                       <FaGithub className="text-[28px]" />
-                      <p class="pt-2  dark:text-white  text-[16px]">
+                      <p class="pt-2  text-white  text-[16px]">
                         johirul-islam-6
                       </p>
                     </div>
                     <div class="flex flex-col justify-center items-center border-2 md:p-5 p-4">
                       <FaPhoneAlt className="text-[28px]" />
-                      <p class="pt-2  dark:text-white  text-[16px]">
+                      <p class="pt-2  text-white  text-[16px]">
                         +880 1824842336
                       </p>
                     </div>

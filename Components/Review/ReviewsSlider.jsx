@@ -125,17 +125,17 @@ const ReviewsSlider = () => {
                   </div>
                 </div>
                 <div className="flex flex-col items-start justify-center ps-5">
-                  <h1 className="text-center md:text-[20px] pt-1 font-[600] dark:text-white text-[#3e54a3]">
+                  <h1 className="text-center md:text-[20px] pt-1 font-[600] text-white ">
                     {student?.name?.slice(0, 16)}
                   </h1>
-                  <p className="text-[14px] dark:text-white text-[#00000090]">
+                  <p className="text-[14px] text-white">
                     {student?.company} -
                     <span className="ps-1">{student?.passion}</span>
                   </p>
                 </div>
               </div>
 
-              <h2 className="text-[17px] dark:text-white  SILIGURI pt-[22px] text-start">
+              <h2 className="text-[17px] text-white  SILIGURI pt-[22px] text-start">
                 {student?.message.slice(0, 152)}{" "}
                 <span className="text-[#c56505]">...</span>
               </h2>
