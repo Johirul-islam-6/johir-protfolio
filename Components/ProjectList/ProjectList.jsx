@@ -19,6 +19,7 @@ import fernicar from "@/app/assets/projects/MERN/fernicar.png";
 import dental from "@/app/assets/projects/MERN/dental.png";
 import event from "@/app/assets/projects/MERN/event.png";
 import unitech from "@/app/assets/projects/MERN/unitech.png";
+import Loader from "../untility/Loader/Loader";
 
 export const ProjectList = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -308,7 +309,7 @@ export const ProjectList = () => {
           >
             {" "}
             <div className="flex w-[100%] absolute h-[80vh] md:h-[60vh] justify-center items-center duration-200 ease-out">
-              <Image width={220} height={220} src={Roket} alt="" />
+              <Loader />
             </div>
           </div>
         ) : (
