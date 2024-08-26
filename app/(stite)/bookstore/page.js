@@ -1,19 +1,32 @@
 "use client";
-import unitech from "@/app/assets/projects/MERN/unitech.png";
-import Image from "next/image";
-import frontend from "@/app/assets/bestProject/course-d.png";
-import frontend2 from "@/app/assets/bestProject/topstudent.png";
-import frontend3 from "@/app/assets/bestProject/diploma.png";
-import frontend4 from "@/app/assets/bestProject/courses.png";
-import backend1 from "@/app/assets/bestProject/dahsboard.png";
-import backend2 from "@/app/assets/bestProject/payment.png";
-import backend3 from "@/app/assets/bestProject/enroll.png";
-import backend4 from "@/app/assets/bestProject/toper.png";
-import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 import React, { useState } from "react";
+import unitech from "@/app/assets/bookstore/home.png";
+import Image from "next/image";
+import frontend from "@/app/assets/bookstore/home.png";
+import frontend1 from "@/app/assets/bookstore/all.png";
+import frontend2 from "@/app/assets/bookstore/cetagory.png";
+import frontend3 from "@/app/assets/bookstore/cetagory-details.png";
+import frontend4 from "@/app/assets/bookstore/no-cetagory.png";
+import frontend5 from "@/app/assets/bookstore/profile.png";
+import frontend6 from "@/app/assets/bestProject/topstudent.png";
 
-const liveDetails = () => {
-  const images = [frontend, frontend2, frontend3, frontend4];
+import backend1 from "@/app/assets/bookstore/admin.png";
+import backend2 from "@/app/assets/bookstore/user-product.png";
+import backend4 from "@/app/assets/bookstore/users.png";
+import backend3 from "@/app/assets/bookstore/show.png";
+
+import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
+import Link from "next/link";
+
+const BookStore = () => {
+  const images = [
+    frontend,
+    frontend1,
+    frontend2,
+    frontend3,
+    frontend4,
+    frontend5,
+  ];
   const [currentIndex, setCurrentIndex] = useState(null);
 
   const openModal = (index) => {
@@ -35,6 +48,7 @@ const liveDetails = () => {
       prevIndex < images.length - 1 ? prevIndex + 1 : 0
     );
   };
+
   return (
     <div className="mt-5 ">
       <main class="pt-16">
@@ -65,7 +79,7 @@ const liveDetails = () => {
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 py-5 mt-5">
                   <a
                     target="_blank"
-                    href="https://unitechbangladesh.com/"
+                    href="https://resell-book-store.vercel.app/"
                     class="border-2 hover:border-amber-600 hover:bg-transparent hover:text-white font-semibold px-8 py-3 rounded-full bg-white text-blue-900 transition duration-300 text-center"
                   >
                     Live Stite view
@@ -77,11 +91,10 @@ const liveDetails = () => {
               <div class="w-full md:w-1/2  relative top-3">
                 <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl py-8 px-8 shadow-2xl">
                   <h2 class="text-2xl font-semibold mb-2">
-                    Academic Services Full Stack Website.
+                    Resell Book Store C2C web application.
                   </h2>
-                  <p className="text-amber-600 font-bold">
-                    I prepared this site frontend or back-end sector and live
-                    Cloud_VPS hosting.
+                  <p className="text-amber-600">
+                    admin access: - Email : rasel@gmail.com, Password : 123456.
                   </p>
                   <ul class="space-y-4 pt-4">
                     <li class="flex items-center text-[16px]">
@@ -102,8 +115,10 @@ const liveDetails = () => {
                         </svg>
                       </div>
                       <span>
-                        <b>SDLC : </b> On my site, I worked by following the
-                        SDLC methodology and applying version control.
+                        <b>Account Creation & Security : </b> Users can
+                        effortlessly create accounts with encrypted passwords
+                        securely stored in the backend. Password recovery is
+                        available via email.{" "}
                       </span>
                     </li>
                     <li class="flex items-center text-[16px]">
@@ -124,10 +139,10 @@ const liveDetails = () => {
                         </svg>
                       </div>
                       <span>
-                        <b>Student Management : </b>
-                        Students can create accounts with encrypted JWT token
-                        passwords, view notices, top students, reviews, book
-                        courses, and access other services.
+                        <b>Book Creation & Viewing :</b> Users can create up to
+                        3 books, with views counted each time a book is visited.
+                        Books are categorized by 7 departments and 8 semesters,
+                        with options for technical, medical, and general books.
                       </span>
                     </li>
                     <li class="flex items-center text-[16px]">
@@ -148,11 +163,9 @@ const liveDetails = () => {
                         </svg>
                       </div>
                       <span>
-                        <b>Admin Management : </b>
-                        Super-admins can control all student and admin accounts,
-                        manage roles, block users, notices, manage top students,
-                        oversee academic skill courses, and oversee payment
-                        information.
+                        <b>Search & Filtering : </b> Users can search and filter
+                        books by name, semester, or category. All books are
+                        listed by department and semester.{" "}
                       </span>
                     </li>
                     <li class="flex items-center text-[16px]">
@@ -173,9 +186,10 @@ const liveDetails = () => {
                         </svg>
                       </div>
                       <span>
-                        <b>Admin Functions : </b> Admins can create notices,
-                        manage top students, and oversee academic and skill
-                        courses, along with other service access.{" "}
+                        <b> Admin Approval : </b> User-created books are sent to
+                        the admin for approval before being displayed on the
+                        client site. Admins can control user accounts, block
+                        accounts, delete fake books, and approve new admins.
                       </span>
                     </li>
                     <li class="flex items-center text-[16px]">
@@ -196,10 +210,10 @@ const liveDetails = () => {
                         </svg>
                       </div>
                       <span>
-                        <b> Site Metrics : </b> Admins can track site metrics
-                        and search users by email, phone, blood group, and
-                        location, including total visits, enrolled courses, and
-                        student payments all data.{" "}
+                        <b> Admin Controls & Metrics : </b> Admins can track
+                        site metrics, search users by various criteria (email,
+                        phone, name, location), and monitor statistics like
+                        total visits today, pending posts, and total posts.{" "}
                       </span>
                     </li>
                   </ul>
@@ -214,8 +228,9 @@ const liveDetails = () => {
           </div>
         </section>
 
-        <div className="bg-color max-w-screen-xl mx-auto pt-12 md:px-5">
+        <div className="bg-color max-w-screen-xl mx-auto pt-12 md:px-5 ">
           <HeadingText title1={"Expalin Project"} title2={"Expalin Project"} />
+
           <div>
             <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-5 pt-12">
               {images.map((src, index) => (
@@ -266,15 +281,12 @@ const liveDetails = () => {
             )}
             <div className="container py-5">
               <h1 className="text-gray-300 text-[18px] text-justify md:text-start px-3 md:px-0">
-                <b>Expalin Front-End : </b> The frontend is responsible for the
-                user interface and user experience of the website. It is what
-                students and admins interact with directly. Framework: Next.js
-                is used for server-side rendering and building a dynamic,
-                responsive user interface. Styling: Tailwind CSS provides a
-                customizable and efficient way to style the website with a
-                modern look and feel. Interactive Elements: React Slider is used
-                for creating interactive and engaging components on the
-                frontend. <br /> <br />
+                <b>Expalin Front-End : </b> In the Resell Book Store Management
+                C2C web application, users can securely create accounts with
+                encrypted passwords using bcrypt. During login, passwords are
+                hashed and authenticated via JWT or session-based methods. For
+                password recovery, NodeMailer sends a reset link containing a
+                unique token, ensuring secure password resets. <br /> <br />
                 Users can create up to three books on the platform, categorized
                 by title, author, department, and semester. After creation,
                 books require admin approval before being visible to ensure
@@ -285,16 +297,16 @@ const liveDetails = () => {
                 by semester, category, and more. Books are listed by department
                 and semester, with advanced filtering options like condition
                 (new or used), price, and availability, enabling a tailored
-                search experience. <br /> <br /> User Interface: Presents a
-                user-friendly interface for students to manage their accounts,
-                view notices, book courses, and access other services. Admin
-                Dashboard: Allows admins to interact with various administrative
-                functions, including managing notices and tracking site metrics.
+                search experience. <br /> <br /> These features are integrated
+                into a responsive user interface, ensuring a seamless experience
+                across different devices, from desktops to mobile phones. The
+                frontend, often built with frameworks like Next.js, dynamically
+                displays data fetched from the backend..
               </h1>
               <div className="py-12">
                 <a
                   target="_blank"
-                  href="https://unitechbangladesh.com/"
+                  href="https://resell-book-store.vercel.app/"
                   class="border-2  border-amber-600 bg-transparent text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center"
                 >
                   Live Stite view
@@ -305,39 +317,45 @@ const liveDetails = () => {
           <div className="grid  md:grid-cols-2 gap-5 pt-5">
             <Image width={850} height={800} src={backend1} alt="" />
             <Image width={850} height={800} src={backend2} alt="" />
-            <Image width={850} height={800} src={backend3} alt="" />
+          </div>
+          <div className="grid  md:grid-cols-2 gap-5 pt-20">
             <Image width={850} height={800} src={backend4} alt="" />
+            <Image width={850} height={800} src={backend3} alt="" />
           </div>
 
           <div className="container py-5">
             <h1 className="text-gray-300 text-[18px] text-justify md:text-start px-3 md:px-0">
-              <b>Expalin Back-End : </b> Academic Services Full Stack Website.
-              There users can securely create accounts with encrypted passwords
-              using bcrypt. During login, passwords are hashed and authenticated
-              via JWT or session-based methods. For password recovery,
-              NodeMailer sends a reset link <br />
+              <b>Expalin Back-End : </b> In the Resell Book Store Management C2C
+              web application, users can securely create accounts with encrypted
+              passwords using bcrypt. During login, passwords are hashed and
+              authenticated via JWT or session-based methods. For password
+              recovery, NodeMailer sends a reset link <br />
               <br />
               User-created books are first stored in a MongoDB database and
               require admin approval before appearing on the client site. The
               admin panel, built with Node.js and Express, allows admins to
               manage content effectively. Admins can control user accounts by
-              blocking violators, toggling their status to 'blocked'. <br />
+              blocking violators, toggling their status to 'blocked' in the
+              database, delete inappropriate or fake books by sending a delete
+              request to the server, and approve new admins by promoting users
+              to admin status through a database role update. enabling admins to
+              track site visits, manage posts, and monitor statistics, all
+              stored in MongoDB. Admins can search for users using various
+              criteria like email or location through Mongoose queries and track
+              real-time analytics like daily visits. <br />
               <br />
               he backend features robust security and error-handling mechanisms,
               including custom authentication middleware that validates JWT
               tokens and user sessions, error-handling middleware that logs and
               responds to API request errors, and data validation using
               libraries like Joi or Validator.js to prevent injection attacks
-              and ensure data integrity.In summary, the frontend focuses on the
-              presentation and user interaction aspects, while the backend
-              handles data processing, logic, and server-side functionality{" "}
-              <br />
-              <b>admin access: - This site is Private.</b>
+              and ensure data integrity. <br />
+              <b>admin access: - Email : rasel@gmail.com, Password : 123456.</b>
             </h1>
             <div className="pt-12">
               <a
                 target="_blank"
-                href="https://unitechbangladesh.com/dashboard"
+                href="https://resell-book-store.vercel.app/admin"
                 class="border-2  border-amber-600 bg-transparent text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition duration-300 text-center"
               >
                 Live Stite view
@@ -353,4 +371,4 @@ const liveDetails = () => {
     </div>
   );
 };
-export default liveDetails;
+export default BookStore;

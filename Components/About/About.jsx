@@ -351,13 +351,13 @@ export const About = () => {
                       className="about-text-container flex flex-col justify-start ps-2 md:ps-5"
                     >
                       <h1 className="md:text-[20px] text-start text-[16px] font-bold">
-                        Fiverr.Com
+                        local Marketplace
                       </h1>
                       <p className="text-start pt-2 text-[14px] text-[#FF7B00]">
                         Full Stack - Web Developer
                       </p>
                       <p className="text-start pt-2 text-[12px]">
-                        (May 2024 - panding...)
+                        (May 2024 - runing)
                       </p>
                     </div>
                   </button>

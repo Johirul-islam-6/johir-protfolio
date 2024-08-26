@@ -100,7 +100,7 @@ export const ProjectList = () => {
       All: "All",
       Live: "Live",
       image: unitech,
-      Live: "https://unitechbangladesh.com/",
+      Live: "/liveDetails",
     },
     {
       id: 9,
@@ -110,7 +110,7 @@ export const ProjectList = () => {
       All: "All",
       Live: "Live",
       image: resel,
-      Live: "https://resell-book-store.vercel.app/",
+      Live: "/bookstore",
     },
     {
       id: 7,
