@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from "react"; // Import useState only once
 import unitech from "@/app/assets/projects/MERN/unitech.png";
 import Image from "next/image";
 import frontend from "@/app/assets/bestProject/course-d.png";
@@ -10,9 +11,8 @@ import backend2 from "@/app/assets/bestProject/payment.png";
 import backend3 from "@/app/assets/bestProject/enroll.png";
 import backend4 from "@/app/assets/bestProject/toper.png";
 import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
-import React, { useState } from "react";
 
-const liveDetails = () => {
+const LiveDetails = () => {
   const images = [frontend, frontend2, frontend3, frontend4];
   const [currentIndex, setCurrentIndex] = useState(null);
 
@@ -353,4 +353,4 @@ const liveDetails = () => {
     </div>
   );
 };
-export default liveDetails;
+export default LiveDetails;
