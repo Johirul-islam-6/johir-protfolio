@@ -17,6 +17,7 @@ import backend3 from "@/app/assets/bookstore/show.png";
 
 import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 
+// --
 const BookStore = () => {
   const images = [
     frontend,
@@ -216,7 +217,7 @@ const BookStore = () => {
                       </span>
                     </li>
                   </ul>
-                  <p className="pt-3  text-white">
+                  <p className="pt-3 text-white">
                     <b>Technology : </b> Next.js, Node.js, Express, MongoDb,
                     Mongoss, NodeMailer, JWT, Redux, Tailwind, Swiper Slider,
                     React-Slider, etc
@@ -227,11 +228,11 @@ const BookStore = () => {
           </div>
         </section>
 
-        <div className="bg-color max-w-screen-xl mx-auto pt-12 md:px-5 ">
+        <div className="max-w-screen-xl pt-12 mx-auto bg-color md:px-5 ">
           <HeadingText title1={"Expalin Project"} title2={"Expalin Project"} />
 
           <div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-5 pt-12">
+            <div className="grid gap-5 pt-12 sm:grid-cols-2 md:grid-cols-2">
               {images.map((src, index) => (
                 <Image
                   key={index}
@@ -254,10 +255,10 @@ const BookStore = () => {
                   ×
                 </button>
 
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50 ">
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 ">
                   <button
                     onClick={goToPrevious}
-                    className="absolute left-5 text-white text-3xl"
+                    className="absolute text-3xl text-white left-5"
                   >
                     {"<"}
                   </button>
@@ -271,7 +272,7 @@ const BookStore = () => {
                   </div>
                   <button
                     onClick={goToNext}
-                    className="absolute right-5 text-white text-3xl"
+                    className="absolute text-3xl text-white right-5"
                   >
                     {">"}
                   </button>
@@ -313,11 +314,11 @@ const BookStore = () => {
               </div>
             </div>
           </div>
-          <div className="grid  md:grid-cols-2 gap-5 pt-5">
+          <div className="grid gap-5 pt-5 md:grid-cols-2">
             <Image width={850} height={800} src={backend1} alt="" />
             <Image width={850} height={800} src={backend2} alt="" />
           </div>
-          <div className="grid  md:grid-cols-2 gap-5 pt-20">
+          <div className="grid gap-5 pt-20 md:grid-cols-2">
             <Image width={850} height={800} src={backend4} alt="" />
             <Image width={850} height={800} src={backend3} alt="" />
           </div>
