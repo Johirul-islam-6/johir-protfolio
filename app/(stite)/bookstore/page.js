@@ -17,7 +17,6 @@ import backend3 from "@/app/assets/bookstore/show.png";
 
 import { HeadingText } from "@/Components/untility/HeadingText/HeadingText";
 
-// --
 const BookStore = () => {
   const images = [
     frontend,
